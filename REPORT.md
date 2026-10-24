@@ -69,6 +69,8 @@ run in `results/` is included only for completeness.
 demonstrate it live, or supply a recording once model downloads complete.
 
 ---
+<img width="1862" height="910" alt="rubik" src="https://github.com/user-attachments/assets/8031d981-d2f8-4d18-9ec4-8a968f75075e" />
+
 
 ## 3. Experimental design
 
@@ -289,7 +291,7 @@ and moderately good.
 
 ### Q5. Would you use the fastest decision model, the frontier LLM, or a hybrid in a real application?
 
-> *Draft — revise to reflect your own view before submitting.*
+
 
 **None of them, for this particular task — and that is the most important finding.** This
 problem has an exact classical solver. The BFS in this repository finds provably optimal
