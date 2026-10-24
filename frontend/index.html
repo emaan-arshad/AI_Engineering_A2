@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rubik's Cube Race</title>
+<style>
+  :root{
+    --bg:#0f1115; --panel:#181b22; --panel2:#1f232c; --line:#2c313c; --text:#e8eaf0; --muted:#9aa3b2;
+    --accent:#6ea8fe; --good:#3fb950; --bad:#f85149; --warn:#d29922;
+    --U:#f4f4f4; --R:#d9382f; --F:#2fa84f; --D:#f0cf2a; --L:#f08a1c; --B:#2a62d9;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font:14px/1.45 system-ui,Segoe UI,Roboto,sans-serif;padding-top:56px}
+  #banner{position:fixed;top:0;left:0;right:0;height:56px;z-index:1000;display:flex;align-items:center;justify-content:space-between;
+    padding:0 20px;background:#0b3d91;border-bottom:2px solid var(--accent);font-size:20px;font-weight:700;letter-spacing:.3px}
+  #banner small{font-weight:500;font-size:13px;opacity:.85}
+  #banner.missing{background:#7a1f1f}
+  main{max-width:1500px;margin:0 auto;padding:16px 20px 60px}
+  h1{font-size:20px;margin:6px 0 2px} h2{font-size:16px;margin:22px 0 8px}
+  .sub{color:var(--muted);margin-bottom:12px}
+  .controls{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px;display:flex;flex-wrap:wrap;gap:14px;align-items:end}
+  .controls label{display:flex;flex-direction:column;gap:3px;font-size:12px;color:var(--muted)}
+  .controls input,.controls select{background:var(--panel2);color:var(--text);border:1px solid var(--line);border-radius:6px;padding:6px 8px;font-size:14px;width:110px}
+  .chk{flex-direction:row!important;align-items:center;gap:6px!important;color:var(--text)!important;font-size:13px!important}
+  .chk input{width:auto}
+  button{background:var(--accent);color:#06142e;border:0;border-radius:8px;padding:9px 16px;font-weight:700;font-size:14px;cursor:pointer}
+  button.secondary{background:var(--panel2);color:var(--text);border:1px solid var(--line)}
+  button:disabled{opacity:.5;cursor:default}
+  .status{display:flex;gap:14px;align-items:center;margin:12px 0;flex-wrap:wrap}
+  .pill{padding:3px 10px;border-radius:99px;font-weight:700;font-size:12px;background:var(--panel2);border:1px solid var(--line)}
+  .pill.running{color:var(--warn);border-color:var(--warn)} .pill.done{color:var(--good);border-color:var(--good)}
+  .pill.error,.pill.stopped{color:var(--bad);border-color:var(--bad)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:14px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+  .card.solved{border-color:var(--good)} .card.limit{border-color:var(--bad)}
+  .card h3{margin:0;font-size:15px;display:flex;justify-content:space-between;align-items:center;gap:8px}
+  .cat{color:var(--muted);font-size:12px;margin-bottom:8px}
+  .net{display:grid;grid-template-columns:repeat(4,auto);grid-template-rows:repeat(3,auto);gap:3px;justify-content:center;margin:8px 0}
+  .face{display:grid;grid-template-columns:repeat(3,22px);grid-template-rows:repeat(3,22px);gap:1px;background:#000;padding:1px;border-radius:3px}
+  .face i{display:block;border-radius:2px}
+  .cur{display:flex;align-items:baseline;gap:10px;margin:6px 0}
+  .cur b{font-size:30px;min-width:64px;font-variant-numeric:tabular-nums}
+  .cur span{color:var(--muted);font-size:12px}
+  .hist{display:flex;flex-wrap:wrap;gap:4px;min-height:26px;max-height:92px;overflow:auto}
+  .chip{background:var(--panel2);border:1px solid var(--line);border-radius:6px;padding:1px 7px;font-size:12px;font-variant-numeric:tabular-nums}
+  .chip.bad{border-color:var(--bad);color:var(--bad)}
+  .result{margin-top:8px;font-weight:700;font-size:13px;min-height:20px}
+  .result.solved{color:var(--good)} .result.limit{color:var(--bad)}
+  .kv{display:flex;flex-wrap:wrap;gap:4px 14px;color:var(--muted);font-size:12px;margin-top:4px}
+  table{border-collapse:collapse;width:100%}
+  th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+  th:first-child,td:first-child{text-align:left}
+  th{color:var(--muted);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.4px}
+  td.best{color:var(--good);font-weight:700}
+  .bars{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;margin-top:12px}
+  .bar{display:flex;align-items:center;gap:8px;margin:5px 0}
+  .bar .n{width:150px;color:var(--muted);font-size:12px;overflow:hidden;text-overflow:ellipsis}
+  .bar .t{flex:1;background:var(--panel2);border-radius:4px;height:18px;overflow:hidden}
+  .bar .t div{height:100%;background:var(--accent)}
+  .bar .v{width:74px;text-align:right;font-variant-numeric:tabular-nums;font-size:12px}
+  pre.report{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px;white-space:pre-wrap;font:13px/1.5 ui-monospace,Menlo,monospace}
+  #slide{position:fixed;top:56px;left:0;right:0;bottom:0;background:var(--bg);z-index:900;padding:28px 40px;overflow:auto;display:none}
+  #slide h1{font-size:28px} #slide table{font-size:17px}
+  .note{color:var(--muted);font-size:12px;margin-top:8px}
+</style>
+</head>
+<body>
+<div id="banner"><span id="who">Loading…</span><small>AI Engineering · Assignment 02 · Rubik's Cube Race</small></div>
+
+<main>
+  <h1>Fast decision models vs frontier LLM — Rubik's Cube Race</h1>
+  <div class="sub">Every model gets the same scrambled cube, the same engine and the same rules. Speed vs solution quality, via OpenRouter.</div>
+
+  <div class="controls">
+    <label>Test suite
+      <select id="suite"><option value="warmup">Warm-up (3–4)</option><option value="primary" selected>Primary (4–5)</option><option value="extension">Extension (15–20)</option></select></label>
+    <label>Puzzles <input id="n" type="number" min="1" max="50" value="5"></label>
+    <label>Seed <input id="seed" type="number" value="42"></label>
+    <label>Move limit <input id="maxm" type="number" min="1" max="60" value="30"></label>
+    <label>Retries <input id="retries" type="number" min="0" max="5" value="2"></label>
+    <label>Timeout (s) <input id="timeout" type="number" min="1" max="300" value="60"></label>
+    <div id="models" style="display:flex;gap:10px;flex-wrap:wrap"></div>
+    <label class="chk"><input type="checkbox" id="parallel" checked>Run models in parallel</label>
+    <label class="chk"><input type="checkbox" id="mock">Offline MOCK models (UI test only)</label>
+    <button id="run">▶ Run benchmark</button>
+    <button id="stop" class="secondary">■ Stop</button>
+    <button id="slidebtn" class="secondary">📊 Benchmark slide</button>
+  </div>
+  <div id="err" class="note" style="color:var(--bad)"></div>
+  <div id="oll" class="note"></div>
+
+  <div class="status">
+    <span class="pill" id="st">idle</span>
+    <span id="prog" class="sub" style="margin:0"></span>
+    <label class="sub" style="margin:0">Show puzzle
+      <select id="pick" style="background:var(--panel2);color:var(--text);border:1px solid var(--line);border-radius:6px;padding:3px 6px"></select></label>
+    <span id="scr" class="sub" style="margin:0"></span>
+  </div>
+
+  <div class="grid" id="cards"></div>
+
+  <h2>Statistical benchmark</h2>
+  <div id="stats"></div>
+  <div class="bars" id="bars"></div>
+
+  <h2>Answers to the experiment questions</h2>
+  <pre class="report" id="report">Run a benchmark to generate the report.</pre>
+</main>
+
+<div id="slide"><h1>Statistical benchmark results</h1><div id="slidestats"></div><div class="bars" id="slidebars"></div><div class="note" id="slidenote"></div></div>
+
+<script>
+const COLORS={U:'var(--U)',R:'var(--R)',F:'var(--F)',D:'var(--D)',L:'var(--L)',B:'var(--B)'};
+let cfg=null, snap=null, picked=0;
+const $=id=>document.getElementById(id);
+function el(tag,cls,text){const e=document.createElement(tag);if(cls)e.className=cls;if(text!=null)e.textContent=text;return e}
+const f=(x,n=2,u='')=>x==null?'n/a':x.toFixed(n)+u;
+
+function faceEl(s){ // s = 9 chars
+  const d=el('div','face'); for(const c of s){const i=document.createElement('i');i.style.background=COLORS[c]||'#555';d.appendChild(i)} return d}
+function netEl(state){
+  const n=el('div','net'); const F={U:state.slice(0,9),R:state.slice(9,18),F:state.slice(18,27),D:state.slice(27,36),L:state.slice(36,45),B:state.slice(45,54)};
+  const pos={U:[1,2],L:[2,1],F:[2,2],R:[2,3],B:[2,4],D:[3,2]}; // [row,col] in the 3x4 net... U above F, D below F
+  const rc={U:[1,2],L:[2,1],F:[2,2],R:[2,3],B:[2,4],D:[3,2]};
+  for(const k of 'ULFRBD'){const e=faceEl(F[k]);e.style.gridRow=rc[k][0];e.style.gridColumn=rc[k][1];n.appendChild(e)}
+  return n}
+
+async function init(){
+  cfg=await (await fetch('/api/config')).json();
+  const b=$('banner');
+  if(cfg.student_name&&cfg.student_roll){$('who').textContent=cfg.student_name+'  ·  Roll No: '+cfg.student_roll}
+  else{b.classList.add('missing');$('who').textContent='⚠ Set STUDENT_NAME and STUDENT_ROLL in .env (required on screen for the demo)'}
+  const m=$('models'); const localOnly=!!cfg.ollama_configured;
+  for(const [k,v] of Object.entries(cfg.models)){
+    const isLocal=v.interface==='ollama';
+    const l=el('label','chk'); const c=document.createElement('input'); c.type='checkbox';
+    c.checked=localOnly?isLocal:true; c.value=k; c.className='mchk';
+    l.append(c,document.createTextNode(v.label+(isLocal?' (local)':'')));
+    l.title=v.category+' · '+v.model_id+' · '+v.interface; m.appendChild(l)}
+  if(localOnly){ $('timeout').value=180; checkOllama() }
+  else if(!cfg.api_key_configured) $('err').textContent='OPENROUTER_API_KEY is not set on the server — real runs are disabled until you add it to .env (MOCK mode still works).';
+  $('suite').onchange=()=>{ $('n').value=$('suite').value==='warmup'?3:5 };
+  $('run').onclick=run; $('stop').onclick=()=>fetch('/api/stop',{method:'POST'});
+  $('slidebtn').onclick=()=>{const s=$('slide');s.style.display=s.style.display==='block'?'none':'block'};
+  $('pick').onchange=()=>{picked=+$('pick').value};
+  poll(); setInterval(poll,500);
+}
+
+async function checkOllama(){
+  let d; try{ d=await (await fetch('/api/ollama')).json() }catch(e){ return }
+  const o=$('oll');
+  if(!d.reachable){ o.style.color='var(--bad)';
+    o.textContent='Ollama is not reachable at '+d.url+' — start it with "ollama serve", then reload this page.'; return }
+  if(d.missing && d.missing.length){ o.style.color='var(--warn)';
+    o.textContent='Ollama is running, but not pulled yet: '+d.missing.join(', ')+'  →  run "ollama pull <name>" for each.'; return }
+  o.style.color='var(--good)';
+  o.textContent='Ollama is running at '+d.url+' · models ready: '+Object.values(d.configured).join(', ');
+}
+
+async function run(){
+  $('err').textContent='';
+  const models=[...document.querySelectorAll('.mchk')].filter(c=>c.checked).map(c=>c.value);
+  const body={suite:$('suite').value,n_puzzles:+$('n').value,seed:+$('seed').value,max_moves:+$('maxm').value,
+    max_retries:+$('retries').value,timeout_s:+$('timeout').value,models,parallel:$('parallel').checked,mock:$('mock').checked};
+  const r=await fetch('/api/run',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
+  if(!r.ok){const j=await r.json().catch(()=>({}));const d=j.detail;
+    $('err').textContent='Error '+r.status+': '+(typeof d==='string'?d:JSON.stringify(d||j));return}
+  picked=0;
+}
+
+async function poll(){
+  try{snap=await (await fetch('/api/status')).json()}catch(e){return}
+  render();
+  if(snap.status==='done'||snap.status==='stopped'){ if(!poll.rep||poll.rep!==snap.finished_at){poll.rep=snap.finished_at;$('report').textContent=await (await fetch('/api/report')).text()} }
+}
+
+function render(){
+  const s=snap; const st=$('st'); st.textContent=s.status; st.className='pill '+s.status;
+  $('run').disabled=s.status==='running';
+  const P=s.puzzles||[]; const cur=s.current_puzzle||0;
+  $('prog').textContent=P.length?`Puzzle ${cur} of ${s.config.n_puzzles} · ${s.config.suite} suite`:'';
+  const pk=$('pick'); if(pk.options.length!==P.length){pk.innerHTML='';P.forEach(p=>{const o=document.createElement('option');o.value=p.id;o.textContent='#'+p.id;pk.appendChild(o)})}
+  const show=(s.status==='running'&&!picked)?cur:(picked||cur||1);
+  if(pk.value!=String(show)&&P.length) pk.value=String(show);
+  const p=P.find(x=>x.id===show);
+  $('scr').textContent=p?`Scramble (${p.scramble_len}): ${p.scramble.join(' ')} · exact shortest = ${p.optimal==null?'unknown (>6)':p.optimal+' moves'}`:'';
+  if(s.error) $('err').textContent=s.error;
+
+  const cards=$('cards'); cards.innerHTML='';
+  for(const t of (s.trials||[]).filter(t=>t.puzzle_id===show)){
+    const c=el('div','card '+(t.status==='solved'||t.status==='limit'?t.status:''));
+    const h=el('h3'); h.append(el('span',null,t.label),el('span','pill '+(t.status==='running'?'running':''),t.status)); c.appendChild(h);
+    c.appendChild(netEl(t.state));
+    const cu=el('div','cur'); cu.append(el('b',null,t.current||'—'),el('span',null,'current move · turn '+t.turns+'/'+s.config.max_moves)); c.appendChild(cu);
+    const hi=el('div','hist'); for(const e of t.history){hi.appendChild(el('span','chip'+(e.valid?'':' bad'),(e.valid?e.move:'✗')+' '+(e.latency_s*1000).toFixed(0)+'ms'))} c.appendChild(hi);
+    const rs=el('div','result '+(t.status==='solved'||t.status==='limit'?t.status:''));
+    rs.textContent=t.status==='solved'?`✔ SOLVED in ${t.moves} moves`+(t.gap!=null?` (gap ${t.gap>=0?'+':''}${t.gap})`:''):t.status==='limit'?`✖ MOVE LIMIT REACHED (${s.config.max_moves}) — not solved`:'';
+    c.appendChild(rs);
+    const kv=el('div','kv'); kv.append(el('span',null,'time '+f(t.total_time_s,2,'s')),el('span',null,'invalid '+t.invalid),el('span',null,'retries '+t.retries),el('span',null,'errors '+t.transport_errors)); c.appendChild(kv);
+    const le=(t.log&&t.log.length)?t.log[t.log.length-1]:null;
+    if(le){const er=el('div','note','Last error (turn '+le.turn+', '+le.kind+'): '+String(le.error).slice(0,220));er.style.color='var(--bad)';c.appendChild(er)}
+    cards.appendChild(c)}
+  renderStats(s.summary||{},$('stats'),$('bars')); renderStats(s.summary||{},$('slidestats'),$('slidebars'));
+  $('slidenote').textContent=`Suite: ${s.config?s.config.suite:''} · puzzles: ${s.config?s.config.n_puzzles:''} · move limit: ${s.config?s.config.max_moves:''} · optimal gap = model moves − exact BFS shortest moves (solved puzzles with known optimum only)`;
+}
+
+function renderStats(sum,tbl,bars){
+  tbl.innerHTML=''; bars.innerHTML=''; const ks=Object.keys(sum); if(!ks.length){tbl.appendChild(el('div','note','No completed trials yet.'));return}
+  const best=(key,min=true)=>{const v=ks.map(k=>sum[k][key]).filter(x=>x!=null);return v.length?(min?Math.min(...v):Math.max(...v)):null};
+  const cols=[['Model','label',null],['Success rate','success_rate',false,v=>f(v,0,'%')],['Avg latency / move','avg_latency_s',true,v=>f(v,3,' s')],
+    ['Total solve time (avg)','avg_total_time_s',true,v=>f(v,2,' s')],['Avg moves','avg_moves',true,v=>f(v,1)],['Optimal gap (avg)','avg_gap',true,v=>f(v,2)],
+    ['Optimal solves','optimal_hits',false,(v,r)=>v+'/'+r.gap_samples],['Invalid / retries','invalid_outputs',true,(v,r)=>v+' / '+r.retries]];
+  const t=document.createElement('table'); const hr=el('tr'); cols.forEach(c=>hr.appendChild(el('th',null,c[0]))); t.appendChild(hr);
+  for(const k of ks){const r=sum[k],tr=el('tr');
+    cols.forEach(([n,key,min,fmt])=>{const td=el('td',null,fmt?fmt(r[key],r):r[key]); if(min!==null&&key!=='invalid_outputs'&&r[key]!=null&&r[key]===best(key,min)&&new Set(ks.map(q=>sum[q][key])).size>1) td.className='best'; tr.appendChild(td)});
+    t.appendChild(tr)} tbl.appendChild(t);
+  const mk=(title,key,fmt)=>{const box=el('div','card'); box.appendChild(el('h3',null,title)); const mx=Math.max(...ks.map(k=>sum[k][key]||0),1e-9);
+    for(const k of ks){const v=sum[k][key],b=el('div','bar'),tt=el('div','t'),d=document.createElement('div');d.style.width=((v||0)/mx*100)+'%';tt.appendChild(d);b.append(el('span','n',sum[k].label),tt,el('span','v',fmt(v)));box.appendChild(b)} return box};
+  bars.append(mk('Avg latency per move','avg_latency_s',v=>f(v,3,'s')),mk('Success rate','success_rate',v=>f(v,0,'%')),mk('Avg optimal gap (moves)','avg_gap',v=>f(v,2)));
+}
+init();
+</script>
+</body>
+</html>

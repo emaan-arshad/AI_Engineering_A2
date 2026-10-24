@@ -1,0 +1,2981 @@
+{
+  "status": "done",
+  "error": null,
+  "config": {
+    "suite": "primary",
+    "n_puzzles": 5,
+    "seed": 42,
+    "max_moves": 30,
+    "max_retries": 2,
+    "timeout_s": 60.0,
+    "models": [
+      "mock-fast",
+      "mock-fast2",
+      "mock-slow"
+    ],
+    "parallel": true
+  },
+  "current_puzzle": 5,
+  "puzzles": [
+    {
+      "id": 1,
+      "scramble": [
+        "U",
+        "F2",
+        "R'",
+        "B2"
+      ],
+      "scramble_len": 4,
+      "state": "RDDUUBDDLBRLBRLLLFFFUFFURRDUUFDDFBUUFFRRLRRLBBBUBBDLLD",
+      "optimal": 4
+    },
+    {
+      "id": 2,
+      "scramble": [
+        "L'",
+        "U'",
+        "F",
+        "B'"
+      ],
+      "scramble_len": 4,
+      "state": "LLBUUULLUFFUFRUFRUDDLFFLFFLRRDBDDRRFBBBDLDDLDRUURBBRBB",
+      "optimal": 4
+    },
+    {
+      "id": 3,
+      "scramble": [
+        "B2",
+        "F",
+        "L'",
+        "F'"
+      ],
+      "scramble_len": 4,
+      "state": "FDDFUUUUURRLRRLBRLFFFFFFRDUDLRBDDBUUDDLLLLRRFBBLBBUBBD",
+      "optimal": 4
+    },
+    {
+      "id": 4,
+      "scramble": [
+        "F2",
+        "U",
+        "R2",
+        "L'",
+        "D'"
+      ],
+      "scramble_len": 5,
+      "state": "LUUFUDFUDRRLRRLRBDURBDFBBBBUUUUDDBBRFRRFLLDFLFLDFBDFLL",
+      "optimal": 5
+    },
+    {
+      "id": 5,
+      "scramble": [
+        "R'",
+        "F",
+        "D'",
+        "R",
+        "U2"
+      ],
+      "scramble_len": 5,
+      "state": "RLLFUUFUULLDBRRBRRLBBFFDBRDRFLRDDRDDDUULLDUUUFFFBBBBLF",
+      "optimal": 5
+    }
+  ],
+  "trials": [
+    {
+      "model": "mock-fast",
+      "label": "MOCK fast model",
+      "puzzle_id": 1,
+      "state": "UUUUUUUUURRRRRRRRRFFFFFFFFFDDDDDDDDDLLLLLLLLLBBBBBBBBB",
+      "status": "solved",
+      "history": [
+        {
+          "turn": 1,
+          "move": "D2",
+          "latency_s": 0.02159149999999954,
+          "attempt_latency_s": 0.02153889999999592,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.76,
+          "error": null
+        },
+        {
+          "turn": 2,
+          "move": "D2",
+          "latency_s": 0.16960399999999254,
+          "attempt_latency_s": 0.03248710000002575,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.73,
+          "error": null
+        },
+        {
+          "turn": 3,
+          "move": "B2",
+          "latency_s": 0.27169500000002245,
+          "attempt_latency_s": 0.13539819999999736,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.43,
+          "error": null
+        },
+        {
+          "turn": 4,
+          "move": "R'",
+          "latency_s": 0.14062159999997448,
+          "attempt_latency_s": 0.14059009999999716,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.6,
+          "error": null
+        },
+        {
+          "turn": 5,
+          "move": "R2",
+          "latency_s": 0.16065459999998666,
+          "attempt_latency_s": 0.024690600000042195,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.94,
+          "error": null
+        },
+        {
+          "turn": 6,
+          "move": "F2",
+          "latency_s": 0.1593808000000081,
+          "attempt_latency_s": 0.023630099999991216,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.7,
+          "error": null
+        },
+        {
+          "turn": 7,
+          "move": "R",
+          "latency_s": 0.17255380000000287,
+          "attempt_latency_s": 0.17250739999997222,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.94,
+          "error": null
+        },
+        {
+          "turn": 8,
+          "move": "U",
+          "latency_s": 0.03989230000001953,
+          "attempt_latency_s": 0.03986830000002328,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.61,
+          "error": null
+        },
+        {
+          "turn": 9,
+          "move": "U'",
+          "latency_s": 0.18095590000001494,
+          "attempt_latency_s": 0.031332099999985985,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.51,
+          "error": null
+        },
+        {
+          "turn": 10,
+          "move": "R'",
+          "latency_s": 0.16351320000001124,
+          "attempt_latency_s": 0.025271799999984523,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.82,
+          "error": null
+        },
+        {
+          "turn": 11,
+          "move": "R'",
+          "latency_s": 0.03591340000002674,
+          "attempt_latency_s": 0.03587979999997515,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.31,
+          "error": null
+        },
+        {
+          "turn": 12,
+          "move": "R",
+          "latency_s": 0.171077299999979,
+          "attempt_latency_s": 0.030901700000015353,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.48,
+          "error": null
+        },
+        {
+          "turn": 13,
+          "move": "F'",
+          "latency_s": 0.143558999999982,
+          "attempt_latency_s": 0.14352760000002718,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.43,
+          "error": null
+        },
+        {
+          "turn": 14,
+          "move": "F",
+          "latency_s": 0.291049600000008,
+          "attempt_latency_s": 0.14907899999997198,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.5,
+          "error": null
+        },
+        {
+          "turn": 15,
+          "move": "L",
+          "latency_s": 0.017230199999971774,
+          "attempt_latency_s": 0.017138999999986027,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.66,
+          "error": null
+        },
+        {
+          "turn": 16,
+          "move": "L'",
+          "latency_s": 0.17082099999998945,
+          "attempt_latency_s": 0.03177139999996825,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.64,
+          "error": null
+        },
+        {
+          "turn": 17,
+          "move": "U'",
+          "latency_s": 0.2661118999999985,
+          "attempt_latency_s": 0.13076829999999973,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.31,
+          "error": null
+        }
+      ],
+      "moves": 17,
+      "turns": 17,
+      "invalid": 0,
+      "retries": 0,
+      "transport_errors": 0,
+      "total_time_s": 2.5766436000000112,
+      "optimal": 4,
+      "gap": 13,
+      "cost": 0.0,
+      "current": "U'",
+      "log": []
+    },
+    {
+      "model": "mock-fast2",
+      "label": "MOCK fast model 2",
+      "puzzle_id": 1,
+      "state": "UUUBURBFFUFBDRRFULDDRUFBFDLRLDFDFLBBBLRRLLFLDLRRDBBDUU",
+      "status": "limit",
+      "history": [
+        {
+          "turn": 1,
+          "move": "F2",
+          "latency_s": 0.03803749999997308,
+          "attempt_latency_s": 0.03800630000000638,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.83,
+          "error": null
+        },
+        {
+          "turn": 2,
+          "move": "B2",
+          "latency_s": 0.2884465999999861,
+          "attempt_latency_s": 0.15320359999998345,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.55,
+          "error": null
+        },
+        {
+          "turn": 3,
+          "move": "F'",
+          "latency_s": 0.1365246999999954,
+          "attempt_latency_s": 0.13649659999998676,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.6,
+          "error": null
+        },
+        {
+          "turn": 4,
+          "move": "R",
+          "latency_s": 0.14051569999998037,
+          "attempt_latency_s": 0.14050309999998944,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.76,
+          "error": null
+        },
+        {
+          "turn": 5,
+          "move": "F",
+          "latency_s": 0.32015189999998483,
+          "attempt_latency_s": 0.15940469999998186,
+          "attempts": 2,
+          "valid": true,
+          "confidence": 0.52,
+          "error": null
+        },
+        {
+          "turn": 6,
+          "move": "F2",
+          "latency_s": 0.1728114000000005,
+          "attempt_latency_s": 0.17279609999997092,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.69,
+          "error": null
+        },
+        {
+          "turn": 7,
+          "move": "D2",
+          "latency_s": 0.03960409999996273,
+          "attempt_latency_s": 0.03959090000000742,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.82,
+          "error": null
+        },
+        {
+          "turn": 8,
+          "move": "R",
+          "latency_s": 0.18103450000000976,
+          "attempt_latency_s": 0.1810196999999789,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.6,
+          "error": null
+        },
+        {
+          "turn": 9,
+          "move": "F'",
+          "latency_s": 0.16350180000000591,
+          "attempt_latency_s": 0.16348699999997507,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.33,
+          "error": null
+        },
+        {
+          "turn": 10,
+          "move": "B2",
+          "latency_s": 0.03573079999995343,
+          "attempt_latency_s": 0.035700299999973595,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.71,
+          "error": null
+        },
+        {
+          "turn": 11,
+          "move": "B'",
+          "latency_s": 0.17126199999995606,
+          "attempt_latency_s": 0.17122720000003255,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.87,
+          "error": null
+        },
+        {
+          "turn": 12,
+          "move": "R",
+          "latency_s": 0.2924174999999991,
+          "attempt_latency_s": 0.14352229999997235,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.8,
+          "error": null
+        },
+        {
+          "turn": 13,
+          "move": "U",
+          "latency_s": 0.14251729999995177,
+          "attempt_latency_s": 0.14246839999998429,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.69,
+          "error": null
+        },
+        {
+          "turn": 14,
+          "move": "D'",
+          "latency_s": 0.1877875000000131,
+          "attempt_latency_s": 0.18777019999998856,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.91,
+          "error": null
+        },
+        {
+          "turn": 15,
+          "move": "R'",
+          "latency_s": 0.2660833999999568,
+          "attempt_latency_s": 0.2660682000000065,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.79,
+          "error": null
+        },
+        {
+          "turn": 16,
+          "move": "F",
+          "latency_s": 0.16711720000000696,
+          "attempt_latency_s": 0.025713999999993575,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.7,
+          "error": null
+        },
+        {
+          "turn": 17,
+          "move": "R'",
+          "latency_s": 0.04918220000001838,
+          "attempt_latency_s": 0.04913659999999709,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.85,
+          "error": null
+        },
+        {
+          "turn": 18,
+          "move": "F",
+          "latency_s": 0.03148160000000644,
+          "attempt_latency_s": 0.03143440000002329,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.79,
+          "error": null
+        },
+        {
+          "turn": 19,
+          "move": "F2",
+          "latency_s": 0.03168909999999414,
+          "attempt_latency_s": 0.031652299999962,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.37,
+          "error": null
+        },
+        {
+          "turn": 20,
+          "move": "D2",
+          "latency_s": 0.1853125000000091,
+          "attempt_latency_s": 0.04776290000000927,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.44,
+          "error": null
+        },
+        {
+          "turn": 21,
+          "move": "D",
+          "latency_s": 0.17891209999999091,
+          "attempt_latency_s": 0.03846520000001874,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.57,
+          "error": null
+        },
+        {
+          "turn": 22,
+          "move": "U2",
+          "latency_s": 0.17131829999999582,
+          "attempt_latency_s": 0.034511900000040896,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.79,
+          "error": null
+        },
+        {
+          "turn": 23,
+          "move": "B'",
+          "latency_s": 0.038198999999963235,
+          "attempt_latency_s": 0.03816130000001294,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.68,
+          "error": null
+        },
+        {
+          "turn": 24,
+          "move": "L",
+          "latency_s": 0.03085649999997031,
+          "attempt_latency_s": 0.030815900000050078,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.74,
+          "error": null
+        },
+        {
+          "turn": 25,
+          "move": "F'",
+          "latency_s": 0.1880802000000017,
+          "attempt_latency_s": 0.04625690000000304,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.36,
+          "error": null
+        },
+        {
+          "turn": 26,
+          "move": "F2",
+          "latency_s": 0.04912200000001121,
+          "attempt_latency_s": 0.04905180000002929,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.6,
+          "error": null
+        },
+        {
+          "turn": 27,
+          "move": "U",
+          "latency_s": 0.030780599999957303,
+          "attempt_latency_s": 0.030728099999976166,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.65,
+          "error": null
+        },
+        {
+          "turn": 28,
+          "move": "B'",
+          "latency_s": 0.030785999999977776,
+          "attempt_latency_s": 0.030744900000001962,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.64,
+          "error": null
+        },
+        {
+          "turn": 29,
+          "move": "R'",
+          "latency_s": 0.046929400000010446,
+          "attempt_latency_s": 0.046881900000016685,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.67,
+          "error": null
+        },
+        {
+          "turn": 30,
+          "move": "F2",
+          "latency_s": 0.04692389999996749,
+          "attempt_latency_s": 0.04685889999996107,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.57,
+          "error": null
+        }
+      ],
+      "moves": 30,
+      "turns": 30,
+      "invalid": 1,
+      "retries": 1,
+      "transport_errors": 0,
+      "total_time_s": 3.8537316000000033,
+      "optimal": 4,
+      "gap": null,
+      "cost": 0.0,
+      "current": "F2",
+      "log": [
+        {
+          "turn": 5,
+          "attempt": 1,
+          "kind": "invalid",
+          "error": "mock malformed output"
+        }
+      ]
+    },
+    {
+      "model": "mock-slow",
+      "label": "MOCK slow frontier",
+      "puzzle_id": 1,
+      "state": "UUUUUUUUURRRRRRRRRFFFFFFFFFDDDDDDDDDLLLLLLLLLBBBBBBBBB",
+      "status": "solved",
+      "history": [
+        {
+          "turn": 1,
+          "move": "B2",
+          "latency_s": 0.6031075999999871,
+          "attempt_latency_s": 0.46305180000001656,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.32,
+          "error": null
+        },
+        {
+          "turn": 2,
+          "move": "R",
+          "latency_s": 0.4929414000000065,
+          "attempt_latency_s": 0.3426964999999882,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.84,
+          "error": null
+        },
+        {
+          "turn": 3,
+          "move": "F2",
+          "latency_s": 0.7350256999999942,
+          "attempt_latency_s": 0.5916897999999833,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.65,
+          "error": null
+        },
+        {
+          "turn": 4,
+          "move": "U'",
+          "latency_s": 0.6099788999999873,
+          "attempt_latency_s": 0.4793879999999717,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.77,
+          "error": null
+        }
+      ],
+      "moves": 4,
+      "turns": 4,
+      "invalid": 0,
+      "retries": 0,
+      "transport_errors": 0,
+      "total_time_s": 2.4411299000000213,
+      "optimal": 4,
+      "gap": 0,
+      "cost": 0.0,
+      "current": "U'",
+      "log": []
+    },
+    {
+      "model": "mock-fast",
+      "label": "MOCK fast model",
+      "puzzle_id": 2,
+      "state": "DDDUUUUUUFFBRRRRRRLLLFFBFFBDDUDDUDDUFBBLLLLLLRRRFBBFBB",
+      "status": "limit",
+      "history": [
+        {
+          "turn": 1,
+          "move": "U'",
+          "latency_s": 0.03207789999999022,
+          "attempt_latency_s": 0.03203510000003007,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.75,
+          "error": null
+        },
+        {
+          "turn": 2,
+          "move": "U",
+          "latency_s": 0.1791605999999888,
+          "attempt_latency_s": 0.03125409999995554,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.59,
+          "error": null
+        },
+        {
+          "turn": 3,
+          "move": "B",
+          "latency_s": 0.16880570000000716,
+          "attempt_latency_s": 0.028015799999991486,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.44,
+          "error": null
+        },
+        {
+          "turn": 4,
+          "move": "D2",
+          "latency_s": 0.171965699999987,
+          "attempt_latency_s": 0.17191960000002382,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.41,
+          "error": null
+        },
+        {
+          "turn": 5,
+          "move": "D2",
+          "latency_s": 0.17265879999996514,
+          "attempt_latency_s": 0.035164800000018204,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.65,
+          "error": null
+        },
+        {
+          "turn": 6,
+          "move": "D",
+          "latency_s": 0.036635199999977885,
+          "attempt_latency_s": 0.03656979999999521,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.71,
+          "error": null
+        },
+        {
+          "turn": 7,
+          "move": "D'",
+          "latency_s": 0.14940659999996342,
+          "attempt_latency_s": 0.015063800000007177,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.39,
+          "error": null
+        },
+        {
+          "turn": 8,
+          "move": "D2",
+          "latency_s": 0.024428800000009687,
+          "attempt_latency_s": 0.0243907000000263,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.43,
+          "error": null
+        },
+        {
+          "turn": 9,
+          "move": "D2",
+          "latency_s": 0.2896759000000202,
+          "attempt_latency_s": 0.15320330000002969,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.57,
+          "error": null
+        },
+        {
+          "turn": 10,
+          "move": "F'",
+          "latency_s": 0.4591848000000027,
+          "attempt_latency_s": 0.2708066999999801,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.76,
+          "error": null
+        },
+        {
+          "turn": 11,
+          "move": "D2",
+          "latency_s": 0.02954600000003893,
+          "attempt_latency_s": 0.02949100000000726,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.84,
+          "error": null
+        },
+        {
+          "turn": 12,
+          "move": "F2",
+          "latency_s": 0.1547166999999945,
+          "attempt_latency_s": 0.15468359999999848,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.93,
+          "error": null
+        },
+        {
+          "turn": 13,
+          "move": "D'",
+          "latency_s": 0.13682380000000194,
+          "attempt_latency_s": 0.13680859999999484,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.33,
+          "error": null
+        },
+        {
+          "turn": 14,
+          "move": "D",
+          "latency_s": 0.2734662999999955,
+          "attempt_latency_s": 0.13872320000001537,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.79,
+          "error": null
+        },
+        {
+          "turn": 15,
+          "move": "F2",
+          "latency_s": 0.15964809999996987,
+          "attempt_latency_s": 0.022173899999984314,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.46,
+          "error": null
+        },
+        {
+          "turn": 16,
+          "move": "U2",
+          "latency_s": 0.13761199999999008,
+          "attempt_latency_s": 0.13758160000003272,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.84,
+          "error": null
+        },
+        {
+          "turn": 17,
+          "move": "D'",
+          "latency_s": 0.1388744999999858,
+          "attempt_latency_s": 0.1388532000000282,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.39,
+          "error": null
+        },
+        {
+          "turn": 18,
+          "move": "D'",
+          "latency_s": 0.2761294000000021,
+          "attempt_latency_s": 0.13893910000001597,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.37,
+          "error": null
+        },
+        {
+          "turn": 19,
+          "move": "U'",
+          "latency_s": 0.16809200000000146,
+          "attempt_latency_s": 0.02753500000000031,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.74,
+          "error": null
+        },
+        {
+          "turn": 20,
+          "move": "R'",
+          "latency_s": 0.1398117999999613,
+          "attempt_latency_s": 0.13978120000001582,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.57,
+          "error": null
+        },
+        {
+          "turn": 21,
+          "move": "B'",
+          "latency_s": 0.023662599999966005,
+          "attempt_latency_s": 0.023614500000007865,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.59,
+          "error": null
+        },
+        {
+          "turn": 22,
+          "move": "B",
+          "latency_s": 0.17264030000001185,
+          "attempt_latency_s": 0.031841599999950176,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.41,
+          "error": null
+        },
+        {
+          "turn": 23,
+          "move": "L",
+          "latency_s": 0.16750630000001365,
+          "attempt_latency_s": 0.018275599999981296,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.94,
+          "error": null
+        },
+        {
+          "turn": 24,
+          "move": "R'",
+          "latency_s": 0.1660620000000108,
+          "attempt_latency_s": 0.1660314000000085,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.69,
+          "error": null
+        },
+        {
+          "turn": 25,
+          "move": "D2",
+          "latency_s": 0.03567729999997482,
+          "attempt_latency_s": 0.03564679999999498,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.69,
+          "error": null
+        },
+        {
+          "turn": 26,
+          "move": "R2",
+          "latency_s": 0.031023800000014035,
+          "attempt_latency_s": 0.030976899999984653,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.5,
+          "error": null
+        },
+        {
+          "turn": 27,
+          "move": "R2",
+          "latency_s": 0.17146559999997635,
+          "attempt_latency_s": 0.03207980000001953,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.34,
+          "error": null
+        },
+        {
+          "turn": 28,
+          "move": "D",
+          "latency_s": 0.018803900000023077,
+          "attempt_latency_s": 0.01876419999996415,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.7,
+          "error": null
+        },
+        {
+          "turn": 29,
+          "move": "D",
+          "latency_s": 0.17363649999998643,
+          "attempt_latency_s": 0.03141979999998057,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.7,
+          "error": null
+        },
+        {
+          "turn": 30,
+          "move": "U'",
+          "latency_s": 0.016879500000015923,
+          "attempt_latency_s": 0.016699599999981274,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.45,
+          "error": null
+        }
+      ],
+      "moves": 30,
+      "turns": 30,
+      "invalid": 0,
+      "retries": 0,
+      "transport_errors": 0,
+      "total_time_s": 4.276742799999965,
+      "optimal": 4,
+      "gap": null,
+      "cost": 0.0,
+      "current": "U'",
+      "log": []
+    },
+    {
+      "model": "mock-fast2",
+      "label": "MOCK fast model 2",
+      "puzzle_id": 2,
+      "state": "FUUFUULLLFRRURRURRDDDFFFFFFRRRBDDBDDLLBLLDLLDBBUBBUBBU",
+      "status": "limit",
+      "history": [
+        {
+          "turn": 1,
+          "move": "U2",
+          "latency_s": 0.047384200000010424,
+          "attempt_latency_s": 0.047356600000000526,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.72,
+          "error": null
+        },
+        {
+          "turn": 2,
+          "move": "U2",
+          "latency_s": 0.16422060000002148,
+          "attempt_latency_s": 0.16419049999996105,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.35,
+          "error": null
+        },
+        {
+          "turn": 3,
+          "move": "U",
+          "latency_s": 0.16857699999997067,
+          "attempt_latency_s": 0.14098719999998366,
+          "attempts": 2,
+          "valid": true,
+          "confidence": 0.93,
+          "error": null
+        },
+        {
+          "turn": 4,
+          "move": "D'",
+          "latency_s": 0.17185360000001992,
+          "attempt_latency_s": 0.17183430000000044,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.33,
+          "error": null
+        },
+        {
+          "turn": 5,
+          "move": "U'",
+          "latency_s": 0.1730772000000229,
+          "attempt_latency_s": 0.1730469000000312,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.89,
+          "error": null
+        },
+        {
+          "turn": 6,
+          "move": "D'",
+          "latency_s": 0.03629009999997379,
+          "attempt_latency_s": 0.036267800000018724,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.61,
+          "error": null
+        },
+        {
+          "turn": 7,
+          "move": "U2",
+          "latency_s": 0.14941340000001446,
+          "attempt_latency_s": 0.14939139999995632,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.7,
+          "error": null
+        },
+        {
+          "turn": 8,
+          "move": "D2",
+          "latency_s": 0.17746170000003758,
+          "attempt_latency_s": 0.04053249999998343,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.52,
+          "error": null
+        },
+        {
+          "turn": 9,
+          "move": "U2",
+          "latency_s": 0.4073361999999747,
+          "attempt_latency_s": 0.26971889999998666,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.62,
+          "error": null
+        },
+        {
+          "turn": 10,
+          "move": "U'",
+          "latency_s": 0.18861700000002202,
+          "attempt_latency_s": 0.18858660000000782,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.89,
+          "error": null
+        },
+        {
+          "turn": 11,
+          "move": "U",
+          "latency_s": 0.18397190000001729,
+          "attempt_latency_s": 0.0453656000000251,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.43,
+          "error": null
+        },
+        {
+          "turn": 12,
+          "move": "B",
+          "latency_s": 0.27554309999999305,
+          "attempt_latency_s": 0.13691479999999956,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.54,
+          "error": null
+        },
+        {
+          "turn": 13,
+          "move": "D",
+          "latency_s": 0.1352823000000285,
+          "attempt_latency_s": 0.13525189999995746,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.78,
+          "error": null
+        },
+        {
+          "turn": 14,
+          "move": "D'",
+          "latency_s": 0.2966233999999872,
+          "attempt_latency_s": 0.15928819999999178,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.69,
+          "error": null
+        },
+        {
+          "turn": 15,
+          "move": "F'",
+          "latency_s": 0.27778650000004745,
+          "attempt_latency_s": 0.1390528999999674,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.67,
+          "error": null
+        },
+        {
+          "turn": 16,
+          "move": "U",
+          "latency_s": 0.4449304000000325,
+          "attempt_latency_s": 0.1652968999999871,
+          "attempts": 2,
+          "valid": true,
+          "confidence": 0.87,
+          "error": null
+        },
+        {
+          "turn": 17,
+          "move": "F",
+          "latency_s": 0.03999000000004571,
+          "attempt_latency_s": 0.03993020000001479,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.77,
+          "error": null
+        },
+        {
+          "turn": 18,
+          "move": "L",
+          "latency_s": 0.15687799999994922,
+          "attempt_latency_s": 0.15684889999999996,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.93,
+          "error": null
+        },
+        {
+          "turn": 19,
+          "move": "L'",
+          "latency_s": 0.33302869999999984,
+          "attempt_latency_s": 0.16744900000003327,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.76,
+          "error": null
+        },
+        {
+          "turn": 20,
+          "move": "U",
+          "latency_s": 0.05171980000000076,
+          "attempt_latency_s": 0.051680400000009286,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.39,
+          "error": null
+        },
+        {
+          "turn": 21,
+          "move": "B",
+          "latency_s": 0.18695960000002287,
+          "attempt_latency_s": 0.18691919999997708,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.73,
+          "error": null
+        },
+        {
+          "turn": 22,
+          "move": "L'",
+          "latency_s": 0.03476010000002816,
+          "attempt_latency_s": 0.03473530000002256,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.46,
+          "error": null
+        },
+        {
+          "turn": 23,
+          "move": "L2",
+          "latency_s": 0.15797959999997602,
+          "attempt_latency_s": 0.15794990000000553,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.42,
+          "error": null
+        },
+        {
+          "turn": 24,
+          "move": "L2",
+          "latency_s": 0.0484299999999962,
+          "attempt_latency_s": 0.048404000000005,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.91,
+          "error": null
+        },
+        {
+          "turn": 25,
+          "move": "L",
+          "latency_s": 0.1827250000000049,
+          "attempt_latency_s": 0.047839399999986654,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.84,
+          "error": null
+        },
+        {
+          "turn": 26,
+          "move": "B'",
+          "latency_s": 0.17458990000000085,
+          "attempt_latency_s": 0.03853089999995518,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.6,
+          "error": null
+        },
+        {
+          "turn": 27,
+          "move": "U'",
+          "latency_s": 0.038011600000004364,
+          "attempt_latency_s": 0.037965399999961846,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.39,
+          "error": null
+        },
+        {
+          "turn": 28,
+          "move": "L",
+          "latency_s": 0.046198500000002696,
+          "attempt_latency_s": 0.046128699999997025,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.66,
+          "error": null
+        },
+        {
+          "turn": 29,
+          "move": "L2",
+          "latency_s": 0.030904599999985294,
+          "attempt_latency_s": 0.030864000000008218,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.33,
+          "error": null
+        },
+        {
+          "turn": 30,
+          "move": "L",
+          "latency_s": 0.167006200000003,
+          "attempt_latency_s": 0.030444999999986067,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.55,
+          "error": null
+        }
+      ],
+      "moves": 30,
+      "turns": 30,
+      "invalid": 2,
+      "retries": 2,
+      "transport_errors": 0,
+      "total_time_s": 4.948195899999973,
+      "optimal": 4,
+      "gap": null,
+      "cost": 0.0,
+      "current": "L",
+      "log": [
+        {
+          "turn": 3,
+          "attempt": 1,
+          "kind": "invalid",
+          "error": "mock malformed output"
+        },
+        {
+          "turn": 16,
+          "attempt": 1,
+          "kind": "invalid",
+          "error": "mock malformed output"
+        }
+      ]
+    },
+    {
+      "model": "mock-slow",
+      "label": "MOCK slow frontier",
+      "puzzle_id": 2,
+      "state": "UUUUUUUUURRRRRRRRRFFFFFFFFFDDDDDDDDDLLLLLLLLLBBBBBBBBB",
+      "status": "solved",
+      "history": [
+        {
+          "turn": 1,
+          "move": "B",
+          "latency_s": 0.5519297999999822,
+          "attempt_latency_s": 0.41443350000002965,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.55,
+          "error": null
+        },
+        {
+          "turn": 2,
+          "move": "F'",
+          "latency_s": 0.8056377999999995,
+          "attempt_latency_s": 0.6730724999999893,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.69,
+          "error": null
+        },
+        {
+          "turn": 3,
+          "move": "U",
+          "latency_s": 0.6474877999999649,
+          "attempt_latency_s": 0.5108763000000067,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.68,
+          "error": null
+        },
+        {
+          "turn": 4,
+          "move": "L",
+          "latency_s": 0.7094114999999874,
+          "attempt_latency_s": 0.5709603999999899,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.43,
+          "error": null
+        }
+      ],
+      "moves": 4,
+      "turns": 4,
+      "invalid": 0,
+      "retries": 0,
+      "transport_errors": 0,
+      "total_time_s": 2.7145396000000233,
+      "optimal": 4,
+      "gap": 0,
+      "cost": 0.0,
+      "current": "L",
+      "log": []
+    },
+    {
+      "model": "mock-fast",
+      "label": "MOCK fast model",
+      "puzzle_id": 3,
+      "state": "UUUUUUUUURRRRRRRRRFFFFFFFFFDDDDDDDDDLLLLLLLLLBBBBBBBBB",
+      "status": "solved",
+      "history": [
+        {
+          "turn": 1,
+          "move": "F",
+          "latency_s": 0.17487959999999703,
+          "attempt_latency_s": 0.037974199999951,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.35,
+          "error": null
+        },
+        {
+          "turn": 2,
+          "move": "L",
+          "latency_s": 0.17959569999999303,
+          "attempt_latency_s": 0.03918659999999363,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.38,
+          "error": null
+        },
+        {
+          "turn": 3,
+          "move": "B2",
+          "latency_s": 0.2742676999999958,
+          "attempt_latency_s": 0.13632589999997435,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.65,
+          "error": null
+        },
+        {
+          "turn": 4,
+          "move": "D2",
+          "latency_s": 0.029604600000027403,
+          "attempt_latency_s": 0.029521200000033332,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.61,
+          "error": null
+        },
+        {
+          "turn": 5,
+          "move": "D2",
+          "latency_s": 0.1738785000000007,
+          "attempt_latency_s": 0.030583100000001195,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.32,
+          "error": null
+        },
+        {
+          "turn": 6,
+          "move": "D'",
+          "latency_s": 0.031685799999991104,
+          "attempt_latency_s": 0.03164750000001959,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.81,
+          "error": null
+        },
+        {
+          "turn": 7,
+          "move": "D",
+          "latency_s": 0.27425289999996494,
+          "attempt_latency_s": 0.13826740000001791,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.66,
+          "error": null
+        },
+        {
+          "turn": 8,
+          "move": "F'",
+          "latency_s": 0.4103572000000213,
+          "attempt_latency_s": 0.2727727999999843,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.6,
+          "error": null
+        }
+      ],
+      "moves": 8,
+      "turns": 8,
+      "invalid": 0,
+      "retries": 0,
+      "transport_errors": 0,
+      "total_time_s": 1.5487142000000063,
+      "optimal": 4,
+      "gap": 4,
+      "cost": 0.0,
+      "current": "F'",
+      "log": []
+    },
+    {
+      "model": "mock-fast2",
+      "label": "MOCK fast model 2",
+      "puzzle_id": 3,
+      "state": "FFFDUFDRFLLDURRFRRBUUBFBBDLRRDDDFUUDULLBLDBFURURBBLBLL",
+      "status": "limit",
+      "history": [
+        {
+          "turn": 1,
+          "move": "U2",
+          "latency_s": 0.17496410000001106,
+          "attempt_latency_s": 0.1749501999999552,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.72,
+          "error": null
+        },
+        {
+          "turn": 2,
+          "move": "U",
+          "latency_s": 0.17957330000001548,
+          "attempt_latency_s": 0.17955749999998716,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.9,
+          "error": null
+        },
+        {
+          "turn": 3,
+          "move": "U'",
+          "latency_s": 0.27429140000003827,
+          "attempt_latency_s": 0.27427679999999555,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.52,
+          "error": null
+        },
+        {
+          "turn": 4,
+          "move": "L2",
+          "latency_s": 0.044584900000018024,
+          "attempt_latency_s": 0.04455729999995128,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.83,
+          "error": null
+        },
+        {
+          "turn": 5,
+          "move": "R",
+          "latency_s": 0.15921759999997676,
+          "attempt_latency_s": 0.1591864999999757,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.93,
+          "error": null
+        },
+        {
+          "turn": 6,
+          "move": "L2",
+          "latency_s": 0.16951339999997117,
+          "attempt_latency_s": 0.031369100000006256,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.76,
+          "error": null
+        },
+        {
+          "turn": 7,
+          "move": "R'",
+          "latency_s": 0.2697130000000243,
+          "attempt_latency_s": 0.1361579000000006,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.48,
+          "error": null
+        },
+        {
+          "turn": 8,
+          "move": "F2",
+          "latency_s": 0.2767858000000274,
+          "attempt_latency_s": 0.27675590000001193,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.38,
+          "error": null
+        },
+        {
+          "turn": 9,
+          "move": "U'",
+          "latency_s": 0.031209799999999177,
+          "attempt_latency_s": 0.031175200000006953,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.46,
+          "error": null
+        },
+        {
+          "turn": 10,
+          "move": "L",
+          "latency_s": 0.03133300000001782,
+          "attempt_latency_s": 0.03129589999997506,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.9,
+          "error": null
+        },
+        {
+          "turn": 11,
+          "move": "L2",
+          "latency_s": 0.04618640000001051,
+          "attempt_latency_s": 0.04613539999996874,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.9,
+          "error": null
+        },
+        {
+          "turn": 12,
+          "move": "F'",
+          "latency_s": 0.16809389999997393,
+          "attempt_latency_s": 0.03034900000000107,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.49,
+          "error": null
+        },
+        {
+          "turn": 13,
+          "move": "R'",
+          "latency_s": 0.1409400000000005,
+          "attempt_latency_s": 0.1409092999999757,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.64,
+          "error": null
+        },
+        {
+          "turn": 14,
+          "move": "U'",
+          "latency_s": 0.03897399999999607,
+          "attempt_latency_s": 0.038943700000004355,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.75,
+          "error": null
+        },
+        {
+          "turn": 15,
+          "move": "R",
+          "latency_s": 0.048077599999999165,
+          "attempt_latency_s": 0.04802159999997002,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.68,
+          "error": null
+        },
+        {
+          "turn": 16,
+          "move": "B2",
+          "latency_s": 0.07669230000004745,
+          "attempt_latency_s": 0.030638299999964147,
+          "attempts": 2,
+          "valid": true,
+          "confidence": 0.44,
+          "error": null
+        },
+        {
+          "turn": 17,
+          "move": "U'",
+          "latency_s": 0.030540700000017296,
+          "attempt_latency_s": 0.0304707000000235,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.3,
+          "error": null
+        },
+        {
+          "turn": 18,
+          "move": "F'",
+          "latency_s": 0.045900399999993624,
+          "attempt_latency_s": 0.045855299999971066,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.65,
+          "error": null
+        },
+        {
+          "turn": 19,
+          "move": "B",
+          "latency_s": 0.030774000000008073,
+          "attempt_latency_s": 0.03072890000004236,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.45,
+          "error": null
+        },
+        {
+          "turn": 20,
+          "move": "L2",
+          "latency_s": 0.0312815999999998,
+          "attempt_latency_s": 0.03124239999999645,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.56,
+          "error": null
+        },
+        {
+          "turn": 21,
+          "move": "D2",
+          "latency_s": 0.030720099999996364,
+          "attempt_latency_s": 0.030668699999978344,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.5,
+          "error": null
+        },
+        {
+          "turn": 22,
+          "move": "L2",
+          "latency_s": 0.17007090000004155,
+          "attempt_latency_s": 0.03052980000001071,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.75,
+          "error": null
+        },
+        {
+          "turn": 23,
+          "move": "D2",
+          "latency_s": 0.2737662000000114,
+          "attempt_latency_s": 0.1360576000000151,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.53,
+          "error": null
+        },
+        {
+          "turn": 24,
+          "move": "D'",
+          "latency_s": 0.03282640000003312,
+          "attempt_latency_s": 0.032784300000002986,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.85,
+          "error": null
+        },
+        {
+          "turn": 25,
+          "move": "R'",
+          "latency_s": 0.04738729999996849,
+          "attempt_latency_s": 0.047331400000018675,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.63,
+          "error": null
+        },
+        {
+          "turn": 26,
+          "move": "R2",
+          "latency_s": 0.18409030000003668,
+          "attempt_latency_s": 0.04657470000000785,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.83,
+          "error": null
+        },
+        {
+          "turn": 27,
+          "move": "D2",
+          "latency_s": 0.03628390000000081,
+          "attempt_latency_s": 0.036231999999984055,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.43,
+          "error": null
+        },
+        {
+          "turn": 28,
+          "move": "R",
+          "latency_s": 0.18467850000001818,
+          "attempt_latency_s": 0.04644469999999501,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.6,
+          "error": null
+        },
+        {
+          "turn": 29,
+          "move": "L",
+          "latency_s": 0.03969399999999723,
+          "attempt_latency_s": 0.03965130000000272,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.74,
+          "error": null
+        },
+        {
+          "turn": 30,
+          "move": "F'",
+          "latency_s": 0.029117100000007667,
+          "attempt_latency_s": 0.029071899999962625,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.3,
+          "error": null
+        }
+      ],
+      "moves": 30,
+      "turns": 30,
+      "invalid": 1,
+      "retries": 1,
+      "transport_errors": 0,
+      "total_time_s": 3.298038399999996,
+      "optimal": 4,
+      "gap": null,
+      "cost": 0.0,
+      "current": "F'",
+      "log": [
+        {
+          "turn": 16,
+          "attempt": 1,
+          "kind": "invalid",
+          "error": "mock malformed output"
+        }
+      ]
+    },
+    {
+      "model": "mock-slow",
+      "label": "MOCK slow frontier",
+      "puzzle_id": 3,
+      "state": "UUUUUUUUURRRRRRRRRFFFFFFFFFDDDDDDDDDLLLLLLLLLBBBBBBBBB",
+      "status": "solved",
+      "history": [
+        {
+          "turn": 1,
+          "move": "F",
+          "latency_s": 0.49059659999994665,
+          "attempt_latency_s": 0.3548887000000036,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.65,
+          "error": null
+        },
+        {
+          "turn": 2,
+          "move": "L",
+          "latency_s": 0.9201001999999789,
+          "attempt_latency_s": 0.7813757000000123,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.78,
+          "error": null
+        },
+        {
+          "turn": 3,
+          "move": "B2",
+          "latency_s": 0.5556775000000016,
+          "attempt_latency_s": 0.41546369999997523,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.57,
+          "error": null
+        },
+        {
+          "turn": 4,
+          "move": "F'",
+          "latency_s": 0.6395234999999957,
+          "attempt_latency_s": 0.5036066000000119,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.84,
+          "error": null
+        }
+      ],
+      "moves": 4,
+      "turns": 4,
+      "invalid": 0,
+      "retries": 0,
+      "transport_errors": 0,
+      "total_time_s": 2.6059673000000316,
+      "optimal": 4,
+      "gap": 0,
+      "cost": 0.0,
+      "current": "F'",
+      "log": []
+    },
+    {
+      "model": "mock-fast",
+      "label": "MOCK fast model",
+      "puzzle_id": 4,
+      "state": "UUUUUUUUURRRRRRRRRFFFFFFFFFDDDDDDDDDLLLLLLLLLBBBBBBBBB",
+      "status": "solved",
+      "history": [
+        {
+          "turn": 1,
+          "move": "B",
+          "latency_s": 0.03189319999995632,
+          "attempt_latency_s": 0.03185560000002852,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.31,
+          "error": null
+        },
+        {
+          "turn": 2,
+          "move": "B'",
+          "latency_s": 0.16876320000000078,
+          "attempt_latency_s": 0.03138400000000274,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.87,
+          "error": null
+        },
+        {
+          "turn": 3,
+          "move": "D",
+          "latency_s": 0.27382330000000366,
+          "attempt_latency_s": 0.13748009999994792,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.35,
+          "error": null
+        },
+        {
+          "turn": 4,
+          "move": "U'",
+          "latency_s": 0.27833279999998695,
+          "attempt_latency_s": 0.2782866999999669,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.89,
+          "error": null
+        },
+        {
+          "turn": 5,
+          "move": "U",
+          "latency_s": 0.1654634999999871,
+          "attempt_latency_s": 0.026180500000009488,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.35,
+          "error": null
+        },
+        {
+          "turn": 6,
+          "move": "D2",
+          "latency_s": 0.141145999999992,
+          "attempt_latency_s": 0.14111309999998412,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.68,
+          "error": null
+        },
+        {
+          "turn": 7,
+          "move": "L2",
+          "latency_s": 0.13771380000002864,
+          "attempt_latency_s": 0.1376945999999748,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.54,
+          "error": null
+        },
+        {
+          "turn": 8,
+          "move": "D'",
+          "latency_s": 0.02883230000003323,
+          "attempt_latency_s": 0.02880299999998215,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.77,
+          "error": null
+        },
+        {
+          "turn": 9,
+          "move": "D",
+          "latency_s": 0.16792659999998705,
+          "attempt_latency_s": 0.03187600000001112,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.75,
+          "error": null
+        },
+        {
+          "turn": 10,
+          "move": "L2",
+          "latency_s": 0.16075080000001662,
+          "attempt_latency_s": 0.023589700000002267,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.55,
+          "error": null
+        },
+        {
+          "turn": 11,
+          "move": "D2",
+          "latency_s": 0.2741123999999786,
+          "attempt_latency_s": 0.13835739999996122,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.9,
+          "error": null
+        },
+        {
+          "turn": 12,
+          "move": "L",
+          "latency_s": 0.28216639999999416,
+          "attempt_latency_s": 0.14404530000001614,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.8,
+          "error": null
+        },
+        {
+          "turn": 13,
+          "move": "R'",
+          "latency_s": 0.16069310000000314,
+          "attempt_latency_s": 0.1606441999999788,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.32,
+          "error": null
+        },
+        {
+          "turn": 14,
+          "move": "R'",
+          "latency_s": 0.1711051999999995,
+          "attempt_latency_s": 0.03369320000001608,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.53,
+          "error": null
+        },
+        {
+          "turn": 15,
+          "move": "U'",
+          "latency_s": 0.27146479999998974,
+          "attempt_latency_s": 0.13660089999996217,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.66,
+          "error": null
+        },
+        {
+          "turn": 16,
+          "move": "F2",
+          "latency_s": 0.14370119999995268,
+          "attempt_latency_s": 0.1436661999999842,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.54,
+          "error": null
+        }
+      ],
+      "moves": 16,
+      "turns": 16,
+      "invalid": 0,
+      "retries": 0,
+      "transport_errors": 0,
+      "total_time_s": 2.8582121999999686,
+      "optimal": 5,
+      "gap": 11,
+      "cost": 0.0,
+      "current": "F2",
+      "log": []
+    },
+    {
+      "model": "mock-fast2",
+      "label": "MOCK fast model 2",
+      "puzzle_id": 4,
+      "state": "LULFUBFRBRDULRULRDUBURFDLLDUUFFDUBBRDRRFLDRLFBBBFBDFLD",
+      "status": "limit",
+      "history": [
+        {
+          "turn": 1,
+          "move": "L2",
+          "latency_s": 0.0478921999999784,
+          "attempt_latency_s": 0.047863900000038484,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.43,
+          "error": null
+        },
+        {
+          "turn": 2,
+          "move": "L2",
+          "latency_s": 0.29012060000002293,
+          "attempt_latency_s": 0.15279830000002903,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.73,
+          "error": null
+        },
+        {
+          "turn": 3,
+          "move": "D",
+          "latency_s": 0.4146332000000257,
+          "attempt_latency_s": 0.27423160000000735,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.39,
+          "error": null
+        },
+        {
+          "turn": 4,
+          "move": "L",
+          "latency_s": 0.3063566999999807,
+          "attempt_latency_s": 0.16568539999997256,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.39,
+          "error": null
+        },
+        {
+          "turn": 5,
+          "move": "B2",
+          "latency_s": 0.1381719999999973,
+          "attempt_latency_s": 0.13814569999999549,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.87,
+          "error": null
+        },
+        {
+          "turn": 6,
+          "move": "L'",
+          "latency_s": 0.02894229999998288,
+          "attempt_latency_s": 0.028910999999993692,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.34,
+          "error": null
+        },
+        {
+          "turn": 7,
+          "move": "R",
+          "latency_s": 0.16787510000000339,
+          "attempt_latency_s": 0.16785330000004706,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.55,
+          "error": null
+        },
+        {
+          "turn": 8,
+          "move": "L",
+          "latency_s": 0.29884340000000975,
+          "attempt_latency_s": 0.16103509999999233,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.47,
+          "error": null
+        },
+        {
+          "turn": 9,
+          "move": "L'",
+          "latency_s": 0.27990319999997837,
+          "attempt_latency_s": 0.2798679999999649,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.4,
+          "error": null
+        },
+        {
+          "turn": 10,
+          "move": "L",
+          "latency_s": 0.29878539999998566,
+          "attempt_latency_s": 0.022713899999985188,
+          "attempts": 2,
+          "valid": true,
+          "confidence": 0.59,
+          "error": null
+        },
+        {
+          "turn": 11,
+          "move": "R2",
+          "latency_s": 0.17163599999997814,
+          "attempt_latency_s": 0.17160380000001396,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.53,
+          "error": null
+        },
+        {
+          "turn": 12,
+          "move": "R",
+          "latency_s": 0.40941129999998793,
+          "attempt_latency_s": 0.2711553000000322,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.47,
+          "error": null
+        },
+        {
+          "turn": 13,
+          "move": "B2",
+          "latency_s": 0.17428780000000188,
+          "attempt_latency_s": 0.040104399999961515,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.8,
+          "error": null
+        },
+        {
+          "turn": 14,
+          "move": "L'",
+          "latency_s": 0.13363190000001168,
+          "attempt_latency_s": 0.1335802000000399,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.71,
+          "error": null
+        },
+        {
+          "turn": 15,
+          "move": "D2",
+          "latency_s": 0.03467929999999342,
+          "attempt_latency_s": 0.03464200000001938,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.32,
+          "error": null
+        },
+        {
+          "turn": 16,
+          "move": "U",
+          "latency_s": 0.04662710000002335,
+          "attempt_latency_s": 0.04658619999997882,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.8,
+          "error": null
+        },
+        {
+          "turn": 17,
+          "move": "D2",
+          "latency_s": 0.21796979999999166,
+          "attempt_latency_s": 0.029836699999975735,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.78,
+          "error": null
+        },
+        {
+          "turn": 18,
+          "move": "F'",
+          "latency_s": 0.046974900000009256,
+          "attempt_latency_s": 0.046936499999958414,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.87,
+          "error": null
+        },
+        {
+          "turn": 19,
+          "move": "R",
+          "latency_s": 0.04640540000002602,
+          "attempt_latency_s": 0.04636399999998275,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.85,
+          "error": null
+        },
+        {
+          "turn": 20,
+          "move": "L2",
+          "latency_s": 0.030967800000041734,
+          "attempt_latency_s": 0.030904899999995905,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.41,
+          "error": null
+        },
+        {
+          "turn": 21,
+          "move": "D",
+          "latency_s": 0.04660039999998844,
+          "attempt_latency_s": 0.04655880000001389,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.44,
+          "error": null
+        },
+        {
+          "turn": 22,
+          "move": "D2",
+          "latency_s": 0.03187269999995124,
+          "attempt_latency_s": 0.031832199999996647,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.39,
+          "error": null
+        },
+        {
+          "turn": 23,
+          "move": "L2",
+          "latency_s": 0.030546700000002147,
+          "attempt_latency_s": 0.030495499999972253,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.74,
+          "error": null
+        },
+        {
+          "turn": 24,
+          "move": "R",
+          "latency_s": 0.0475315000000478,
+          "attempt_latency_s": 0.04749360000005254,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.65,
+          "error": null
+        },
+        {
+          "turn": 25,
+          "move": "D'",
+          "latency_s": 0.045852199999956156,
+          "attempt_latency_s": 0.04579259999997021,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.79,
+          "error": null
+        },
+        {
+          "turn": 26,
+          "move": "F'",
+          "latency_s": 0.1991045999999983,
+          "attempt_latency_s": 0.030174299999998766,
+          "attempts": 2,
+          "valid": true,
+          "confidence": 0.93,
+          "error": null
+        },
+        {
+          "turn": 27,
+          "move": "U'",
+          "latency_s": 0.0372955999999931,
+          "attempt_latency_s": 0.03725769999999784,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.73,
+          "error": null
+        },
+        {
+          "turn": 28,
+          "move": "D",
+          "latency_s": 0.1807833999999957,
+          "attempt_latency_s": 0.046820099999990816,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.59,
+          "error": null
+        },
+        {
+          "turn": 29,
+          "move": "D'",
+          "latency_s": 0.042195399999968686,
+          "attempt_latency_s": 0.042152699999974175,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.83,
+          "error": null
+        },
+        {
+          "turn": 30,
+          "move": "F",
+          "latency_s": 0.030805199999974775,
+          "attempt_latency_s": 0.030756299999950443,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.31,
+          "error": null
+        }
+      ],
+      "moves": 30,
+      "turns": 30,
+      "invalid": 2,
+      "retries": 2,
+      "transport_errors": 0,
+      "total_time_s": 4.277424699999983,
+      "optimal": 5,
+      "gap": null,
+      "cost": 0.0,
+      "current": "F",
+      "log": [
+        {
+          "turn": 10,
+          "attempt": 1,
+          "kind": "invalid",
+          "error": "mock malformed output"
+        },
+        {
+          "turn": 26,
+          "attempt": 1,
+          "kind": "invalid",
+          "error": "mock malformed output"
+        }
+      ]
+    },
+    {
+      "model": "mock-slow",
+      "label": "MOCK slow frontier",
+      "puzzle_id": 4,
+      "state": "UUUUUUUUURRRRRRRRRFFFFFFFFFDDDDDDDDDLLLLLLLLLBBBBBBBBB",
+      "status": "solved",
+      "history": [
+        {
+          "turn": 1,
+          "move": "D",
+          "latency_s": 0.6118524999999977,
+          "attempt_latency_s": 0.47453359999997247,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.38,
+          "error": null
+        },
+        {
+          "turn": 2,
+          "move": "L",
+          "latency_s": 0.5851000000000113,
+          "attempt_latency_s": 0.44760229999997136,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.39,
+          "error": null
+        },
+        {
+          "turn": 3,
+          "move": "R2",
+          "latency_s": 0.7711074000000053,
+          "attempt_latency_s": 0.6319738999999913,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.65,
+          "error": null
+        },
+        {
+          "turn": 4,
+          "move": "U'",
+          "latency_s": 0.6112362999999732,
+          "attempt_latency_s": 0.4752991999999949,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.88,
+          "error": null
+        },
+        {
+          "turn": 5,
+          "move": "F2",
+          "latency_s": 0.581130499999972,
+          "attempt_latency_s": 0.44808110000002443,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.75,
+          "error": null
+        }
+      ],
+      "moves": 5,
+      "turns": 5,
+      "invalid": 0,
+      "retries": 0,
+      "transport_errors": 0,
+      "total_time_s": 3.160517299999981,
+      "optimal": 5,
+      "gap": 0,
+      "cost": 0.0,
+      "current": "F2",
+      "log": []
+    },
+    {
+      "model": "mock-fast",
+      "label": "MOCK fast model",
+      "puzzle_id": 5,
+      "state": "UUUUUUUUURRRRRRRRRFFFFFFFFFDDDDDDDDDLLLLLLLLLBBBBBBBBB",
+      "status": "solved",
+      "history": [
+        {
+          "turn": 1,
+          "move": "U2",
+          "latency_s": 0.1816890999999714,
+          "attempt_latency_s": 0.03122999999999365,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.38,
+          "error": null
+        },
+        {
+          "turn": 2,
+          "move": "D",
+          "latency_s": 0.13572749999997313,
+          "attempt_latency_s": 0.13567990000001373,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.43,
+          "error": null
+        },
+        {
+          "turn": 3,
+          "move": "D",
+          "latency_s": 0.031984700000009525,
+          "attempt_latency_s": 0.03195799999997462,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.34,
+          "error": null
+        },
+        {
+          "turn": 4,
+          "move": "D2",
+          "latency_s": 0.2734742999999753,
+          "attempt_latency_s": 0.1348308999999972,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.81,
+          "error": null
+        },
+        {
+          "turn": 5,
+          "move": "R'",
+          "latency_s": 0.2772461999999791,
+          "attempt_latency_s": 0.14223989999999276,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.32,
+          "error": null
+        },
+        {
+          "turn": 6,
+          "move": "D",
+          "latency_s": 0.15824170000001914,
+          "attempt_latency_s": 0.02135580000003756,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.51,
+          "error": null
+        },
+        {
+          "turn": 7,
+          "move": "F'",
+          "latency_s": 0.27134180000001606,
+          "attempt_latency_s": 0.1391655000000469,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.37,
+          "error": null
+        },
+        {
+          "turn": 8,
+          "move": "R",
+          "latency_s": 0.2711649999999963,
+          "attempt_latency_s": 0.13288749999998117,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.61,
+          "error": null
+        }
+      ],
+      "moves": 8,
+      "turns": 8,
+      "invalid": 0,
+      "retries": 0,
+      "transport_errors": 0,
+      "total_time_s": 1.6010274999999865,
+      "optimal": 5,
+      "gap": 3,
+      "cost": 0.0,
+      "current": "R",
+      "log": []
+    },
+    {
+      "model": "mock-fast2",
+      "label": "MOCK fast model 2",
+      "puzzle_id": 5,
+      "state": "UUUUUUUUURRRRRRRRRFFFFFFFFFDDDDDDDDDLLLLLLLLLBBBBBBBBB",
+      "status": "solved",
+      "history": [
+        {
+          "turn": 1,
+          "move": "U2",
+          "latency_s": 0.3171893999999611,
+          "attempt_latency_s": 0.1820304999999962,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.61,
+          "error": null
+        },
+        {
+          "turn": 2,
+          "move": "R'",
+          "latency_s": 0.166966900000034,
+          "attempt_latency_s": 0.03224629999999706,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.64,
+          "error": null
+        },
+        {
+          "turn": 3,
+          "move": "R2",
+          "latency_s": 0.28094499999997424,
+          "attempt_latency_s": 0.28089490000002115,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.52,
+          "error": null
+        },
+        {
+          "turn": 4,
+          "move": "D'",
+          "latency_s": 0.13522260000002007,
+          "attempt_latency_s": 0.1351799999999912,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.94,
+          "error": null
+        },
+        {
+          "turn": 5,
+          "move": "D",
+          "latency_s": 0.29684499999996206,
+          "attempt_latency_s": 0.15813119999995706,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.44,
+          "error": null
+        },
+        {
+          "turn": 6,
+          "move": "F2",
+          "latency_s": 0.2653909999999655,
+          "attempt_latency_s": 0.2653429000000074,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.73,
+          "error": null
+        },
+        {
+          "turn": 7,
+          "move": "F2",
+          "latency_s": 0.2874902999999449,
+          "attempt_latency_s": 0.14428149999997686,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.88,
+          "error": null
+        },
+        {
+          "turn": 8,
+          "move": "R2",
+          "latency_s": 0.1868087000000287,
+          "attempt_latency_s": 0.044996900000001006,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.46,
+          "error": null
+        },
+        {
+          "turn": 9,
+          "move": "D",
+          "latency_s": 0.2925705000000107,
+          "attempt_latency_s": 0.15231060000002117,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.58,
+          "error": null
+        },
+        {
+          "turn": 10,
+          "move": "F'",
+          "latency_s": 0.18035079999998516,
+          "attempt_latency_s": 0.04419070000000147,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.94,
+          "error": null
+        },
+        {
+          "turn": 11,
+          "move": "D",
+          "latency_s": 0.16011700000001383,
+          "attempt_latency_s": 0.16008679999998776,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.57,
+          "error": null
+        },
+        {
+          "turn": 12,
+          "move": "L'",
+          "latency_s": 0.03739500000000362,
+          "attempt_latency_s": 0.03735710000000836,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.62,
+          "error": null
+        },
+        {
+          "turn": 13,
+          "move": "B2",
+          "latency_s": 0.031623099999990245,
+          "attempt_latency_s": 0.031583500000010645,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.41,
+          "error": null
+        },
+        {
+          "turn": 14,
+          "move": "B2",
+          "latency_s": 0.18884439999999358,
+          "attempt_latency_s": 0.04668500000002496,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.47,
+          "error": null
+        },
+        {
+          "turn": 15,
+          "move": "L2",
+          "latency_s": 0.03238629999998466,
+          "attempt_latency_s": 0.032346199999949476,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.45,
+          "error": null
+        },
+        {
+          "turn": 16,
+          "move": "B2",
+          "latency_s": 0.15720460000000003,
+          "attempt_latency_s": 0.15716209999999364,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.36,
+          "error": null
+        },
+        {
+          "turn": 17,
+          "move": "U2",
+          "latency_s": 0.04980150000000094,
+          "attempt_latency_s": 0.0497630000000413,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.6,
+          "error": null
+        },
+        {
+          "turn": 18,
+          "move": "R2",
+          "latency_s": 0.030854200000021592,
+          "attempt_latency_s": 0.030806900000015958,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.76,
+          "error": null
+        },
+        {
+          "turn": 19,
+          "move": "D2",
+          "latency_s": 0.031701600000019425,
+          "attempt_latency_s": 0.031661499999984244,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.43,
+          "error": null
+        },
+        {
+          "turn": 20,
+          "move": "D2",
+          "latency_s": 0.18849969999996574,
+          "attempt_latency_s": 0.046710499999960575,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.86,
+          "error": null
+        },
+        {
+          "turn": 21,
+          "move": "R2",
+          "latency_s": 0.16978019999999105,
+          "attempt_latency_s": 0.03259409999998297,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.95,
+          "error": null
+        },
+        {
+          "turn": 22,
+          "move": "U'",
+          "latency_s": 0.03854839999996784,
+          "attempt_latency_s": 0.03850950000003195,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.79,
+          "error": null
+        },
+        {
+          "turn": 23,
+          "move": "U2",
+          "latency_s": 0.03174919999997883,
+          "attempt_latency_s": 0.03170890000001236,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.44,
+          "error": null
+        },
+        {
+          "turn": 24,
+          "move": "U",
+          "latency_s": 0.18477229999996325,
+          "attempt_latency_s": 0.04655740000004016,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.66,
+          "error": null
+        },
+        {
+          "turn": 25,
+          "move": "B2",
+          "latency_s": 0.18947100000002592,
+          "attempt_latency_s": 0.05165959999999359,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.92,
+          "error": null
+        },
+        {
+          "turn": 26,
+          "move": "L'",
+          "latency_s": 0.1723632000000066,
+          "attempt_latency_s": 0.03785979999997835,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.52,
+          "error": null
+        },
+        {
+          "turn": 27,
+          "move": "D'",
+          "latency_s": 0.1801992000000041,
+          "attempt_latency_s": 0.041376599999978225,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.31,
+          "error": null
+        },
+        {
+          "turn": 28,
+          "move": "R",
+          "latency_s": 0.17805549999997083,
+          "attempt_latency_s": 0.03733080000000655,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.59,
+          "error": null
+        }
+      ],
+      "moves": 28,
+      "turns": 28,
+      "invalid": 0,
+      "retries": 0,
+      "transport_errors": 0,
+      "total_time_s": 4.463761599999998,
+      "optimal": 5,
+      "gap": 23,
+      "cost": 0.0,
+      "current": "R",
+      "log": []
+    },
+    {
+      "model": "mock-slow",
+      "label": "MOCK slow frontier",
+      "puzzle_id": 5,
+      "state": "UUUUUUUUURRRRRRRRRFFFFFFFFFDDDDDDDDDLLLLLLLLLBBBBBBBBB",
+      "status": "solved",
+      "history": [
+        {
+          "turn": 1,
+          "move": "U2",
+          "latency_s": 0.7647019999999998,
+          "attempt_latency_s": 0.6229566999999747,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.58,
+          "error": null
+        },
+        {
+          "turn": 2,
+          "move": "R'",
+          "latency_s": 0.6977034999999887,
+          "attempt_latency_s": 0.5651094999999486,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.6,
+          "error": null
+        },
+        {
+          "turn": 3,
+          "move": "D",
+          "latency_s": 0.6267659000000094,
+          "attempt_latency_s": 0.49223630000000185,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.49,
+          "error": null
+        },
+        {
+          "turn": 4,
+          "move": "F'",
+          "latency_s": 0.48073610000000144,
+          "attempt_latency_s": 0.3422871000000214,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.76,
+          "error": null
+        },
+        {
+          "turn": 5,
+          "move": "R",
+          "latency_s": 0.4475269999999796,
+          "attempt_latency_s": 0.3058412000000317,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.47,
+          "error": null
+        }
+      ],
+      "moves": 5,
+      "turns": 5,
+      "invalid": 0,
+      "retries": 0,
+      "transport_errors": 0,
+      "total_time_s": 3.017522299999996,
+      "optimal": 5,
+      "gap": 0,
+      "cost": 0.0,
+      "current": "R",
+      "log": []
+    }
+  ],
+  "labels": {
+    "mock-fast": "MOCK fast model",
+    "mock-fast2": "MOCK fast model 2",
+    "mock-slow": "MOCK slow frontier"
+  },
+  "summary": {
+    "mock-fast": {
+      "label": "MOCK fast model",
+      "trials": 5,
+      "solved": 4,
+      "success_rate": 80.0,
+      "avg_latency_s": 0.1627795493670845,
+      "median_latency_s": 0.16750630000001365,
+      "p95_latency_s": 0.28216639999999416,
+      "avg_total_time_s": 2.5722680599999874,
+      "avg_moves": 15.8,
+      "avg_moves_solved": 12.25,
+      "avg_gap": 7.75,
+      "optimal_hits": 0,
+      "gap_samples": 4,
+      "invalid_outputs": 0,
+      "retries": 0,
+      "transport_errors": 0,
+      "total_cost": 0.0
+    },
+    "mock-fast2": {
+      "label": "MOCK fast model 2",
+      "trials": 5,
+      "solved": 1,
+      "success_rate": 20.0,
+      "avg_latency_s": 0.14079593986486322,
+      "median_latency_s": 0.15921759999997676,
+      "p95_latency_s": 0.3063566999999807,
+      "avg_total_time_s": 4.1682304399999905,
+      "avg_moves": 29.6,
+      "avg_moves_solved": 28.0,
+      "avg_gap": 23.0,
+      "optimal_hits": 0,
+      "gap_samples": 1,
+      "invalid_outputs": 6,
+      "retries": 6,
+      "transport_errors": 0,
+      "total_cost": 0.0
+    },
+    "mock-slow": {
+      "label": "MOCK slow frontier",
+      "trials": 5,
+      "solved": 5,
+      "success_rate": 100.0,
+      "avg_latency_s": 0.6336036136363532,
+      "median_latency_s": 0.6112362999999732,
+      "p95_latency_s": 0.8056377999999995,
+      "avg_total_time_s": 2.787935280000011,
+      "avg_moves": 4.4,
+      "avg_moves_solved": 4.4,
+      "avg_gap": 0.0,
+      "optimal_hits": 5,
+      "gap_samples": 5,
+      "invalid_outputs": 0,
+      "retries": 0,
+      "transport_errors": 0,
+      "total_cost": 0.0
+    }
+  },
+  "started_at": 1792692070.553991,
+  "finished_at": 1792692091.4435496
+}

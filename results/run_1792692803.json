@@ -1,0 +1,1368 @@
+{
+  "status": "stopped",
+  "error": null,
+  "config": {
+    "suite": "primary",
+    "n_puzzles": 1,
+    "seed": 42,
+    "max_moves": 30,
+    "max_retries": 2,
+    "timeout_s": 60.0,
+    "models": [
+      "jev",
+      "luna",
+      "clef",
+      "opus"
+    ],
+    "parallel": true
+  },
+  "current_puzzle": 1,
+  "puzzles": [
+    {
+      "id": 1,
+      "scramble": [
+        "U",
+        "F2",
+        "R'",
+        "B2"
+      ],
+      "scramble_len": 4,
+      "state": "RDDUUBDDLBRLBRLLLFFFUFFURRDUUFDDFBUUFFRRLRRLBBBUBBDLLD",
+      "optimal": 4
+    }
+  ],
+  "trials": [
+    {
+      "model": "jev",
+      "label": "Jev 1.13",
+      "puzzle_id": 1,
+      "state": "RDDUUBDDLBRLBRLLLFFFUFFURRDUUFDDFBUUFFRRLRRLBBBUBBDLLD",
+      "status": "limit",
+      "history": [
+        {
+          "turn": 1,
+          "move": "U",
+          "latency_s": 1.1700108999999657,
+          "attempt_latency_s": 1.1699423000000024,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.08,
+          "error": null
+        },
+        {
+          "turn": 2,
+          "move": "U'",
+          "latency_s": 0.6488291000000572,
+          "attempt_latency_s": 0.6487882999999783,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.61,
+          "error": null
+        },
+        {
+          "turn": 3,
+          "move": "U",
+          "latency_s": 0.6491273000000319,
+          "attempt_latency_s": 0.649063999999953,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.12,
+          "error": null
+        },
+        {
+          "turn": 4,
+          "move": "U'",
+          "latency_s": 0.6631471999999121,
+          "attempt_latency_s": 0.6631029999999782,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.24,
+          "error": null
+        },
+        {
+          "turn": 5,
+          "move": "U",
+          "latency_s": 0.6223695000001044,
+          "attempt_latency_s": 0.6223029000000224,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.12,
+          "error": null
+        },
+        {
+          "turn": 6,
+          "move": "U'",
+          "latency_s": 0.6447964000000184,
+          "attempt_latency_s": 0.6447483999999122,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.23,
+          "error": null
+        },
+        {
+          "turn": 7,
+          "move": "U",
+          "latency_s": 0.7203203999999914,
+          "attempt_latency_s": 0.7202762999999095,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.1,
+          "error": null
+        },
+        {
+          "turn": 8,
+          "move": "U'",
+          "latency_s": 0.6769114999999601,
+          "attempt_latency_s": 0.676865399999997,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.12,
+          "error": null
+        },
+        {
+          "turn": 9,
+          "move": "U",
+          "latency_s": 0.5410812000000078,
+          "attempt_latency_s": 0.5410299000000123,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.11,
+          "error": null
+        },
+        {
+          "turn": 10,
+          "move": "U'",
+          "latency_s": 0.5621380000000045,
+          "attempt_latency_s": 0.5620976000000155,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.15,
+          "error": null
+        },
+        {
+          "turn": 11,
+          "move": "U",
+          "latency_s": 0.6008954999999787,
+          "attempt_latency_s": 0.6008520999999973,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.1,
+          "error": null
+        },
+        {
+          "turn": 12,
+          "move": "U'",
+          "latency_s": 0.5634559999999738,
+          "attempt_latency_s": 0.5633806999999251,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.15,
+          "error": null
+        },
+        {
+          "turn": 13,
+          "move": "U",
+          "latency_s": 0.6045232000000169,
+          "attempt_latency_s": 0.6044636999999966,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.14,
+          "error": null
+        },
+        {
+          "turn": 14,
+          "move": "U'",
+          "latency_s": 0.5694629999999279,
+          "attempt_latency_s": 0.5694174999999859,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.16,
+          "error": null
+        },
+        {
+          "turn": 15,
+          "move": "U",
+          "latency_s": 0.6119590999999218,
+          "attempt_latency_s": 0.6118887999999743,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.12,
+          "error": null
+        },
+        {
+          "turn": 16,
+          "move": "U'",
+          "latency_s": 0.605357300000037,
+          "attempt_latency_s": 0.6053150000000187,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.17,
+          "error": null
+        },
+        {
+          "turn": 17,
+          "move": "U",
+          "latency_s": 0.5625713999999107,
+          "attempt_latency_s": 0.5625140999999303,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.1,
+          "error": null
+        },
+        {
+          "turn": 18,
+          "move": "U'",
+          "latency_s": 0.5692000000000235,
+          "attempt_latency_s": 0.5691595999999208,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.11,
+          "error": null
+        },
+        {
+          "turn": 19,
+          "move": "U",
+          "latency_s": 0.556370300000026,
+          "attempt_latency_s": 0.5563244999999597,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.09,
+          "error": null
+        },
+        {
+          "turn": 20,
+          "move": "U'",
+          "latency_s": 0.5786438000000089,
+          "attempt_latency_s": 0.5785909000001084,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.13,
+          "error": null
+        },
+        {
+          "turn": 21,
+          "move": "U",
+          "latency_s": 0.5656251999999995,
+          "attempt_latency_s": 0.5655831000000262,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.13,
+          "error": null
+        },
+        {
+          "turn": 22,
+          "move": "U'",
+          "latency_s": 0.5511003000000301,
+          "attempt_latency_s": 0.5510462000000871,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.13,
+          "error": null
+        },
+        {
+          "turn": 23,
+          "move": "U",
+          "latency_s": 0.5850977999999714,
+          "attempt_latency_s": 0.5850480000000289,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.12,
+          "error": null
+        },
+        {
+          "turn": 24,
+          "move": "U'",
+          "latency_s": 0.5571134000000484,
+          "attempt_latency_s": 0.5570458999999346,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.14,
+          "error": null
+        },
+        {
+          "turn": 25,
+          "move": "U",
+          "latency_s": 0.5868730999999343,
+          "attempt_latency_s": 0.5868258000000424,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.12,
+          "error": null
+        },
+        {
+          "turn": 26,
+          "move": "U'",
+          "latency_s": 0.5863716000000068,
+          "attempt_latency_s": 0.5863208999999188,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.13,
+          "error": null
+        },
+        {
+          "turn": 27,
+          "move": "U",
+          "latency_s": 0.6384257000000844,
+          "attempt_latency_s": 0.638366299999916,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.11,
+          "error": null
+        },
+        {
+          "turn": 28,
+          "move": "U'",
+          "latency_s": 0.6288723000000118,
+          "attempt_latency_s": 0.6287547999999106,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.13,
+          "error": null
+        },
+        {
+          "turn": 29,
+          "move": "U",
+          "latency_s": 0.7507049999999253,
+          "attempt_latency_s": 0.7506478999999899,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.15,
+          "error": null
+        },
+        {
+          "turn": 30,
+          "move": "U'",
+          "latency_s": 0.6032721000000265,
+          "attempt_latency_s": 0.6032237999999097,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.27,
+          "error": null
+        }
+      ],
+      "moves": 30,
+      "turns": 30,
+      "invalid": 0,
+      "retries": 0,
+      "transport_errors": 0,
+      "total_time_s": 18.775462800000014,
+      "optimal": 4,
+      "gap": null,
+      "cost": 0.0020588820000000006,
+      "current": "U'",
+      "log": []
+    },
+    {
+      "model": "luna",
+      "label": "GPT-6 Luna Decisions",
+      "puzzle_id": 1,
+      "state": "DULDUBUFFDLFRRBBBBRLLFFBRRLUUUDDDBUDFFFRLRRLBUFRUBDLLD",
+      "status": "limit",
+      "history": [
+        {
+          "turn": 1,
+          "move": "U",
+          "latency_s": 1.844398100000035,
+          "attempt_latency_s": 1.8443410999999514,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.22,
+          "error": null
+        },
+        {
+          "turn": 2,
+          "move": "R'",
+          "latency_s": 0.5075345000000198,
+          "attempt_latency_s": 0.5074604999999792,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.09,
+          "error": null
+        },
+        {
+          "turn": 3,
+          "move": "U",
+          "latency_s": 0.7981303000000253,
+          "attempt_latency_s": 0.7980577999999241,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.17,
+          "error": null
+        },
+        {
+          "turn": 4,
+          "move": "U",
+          "latency_s": 0.5018689999999424,
+          "attempt_latency_s": 0.5018160000000762,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.12,
+          "error": null
+        },
+        {
+          "turn": 5,
+          "move": "R'",
+          "latency_s": 0.5143431000000191,
+          "attempt_latency_s": 0.5142555999999558,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.14,
+          "error": null
+        },
+        {
+          "turn": 6,
+          "move": "R'",
+          "latency_s": 0.558499500000039,
+          "attempt_latency_s": 0.558457599999997,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.14,
+          "error": null
+        },
+        {
+          "turn": 7,
+          "move": "R'",
+          "latency_s": 0.5197154999999611,
+          "attempt_latency_s": 0.5196719000000485,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.23,
+          "error": null
+        },
+        {
+          "turn": 8,
+          "move": "R'",
+          "latency_s": 0.5297365000000127,
+          "attempt_latency_s": 0.5296938999999838,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.21,
+          "error": null
+        },
+        {
+          "turn": 9,
+          "move": "U",
+          "latency_s": 0.5109727000000248,
+          "attempt_latency_s": 0.5109308000000965,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.17,
+          "error": null
+        },
+        {
+          "turn": 10,
+          "move": "U",
+          "latency_s": 0.5012533000000303,
+          "attempt_latency_s": 0.5012077999999747,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.14,
+          "error": null
+        },
+        {
+          "turn": 11,
+          "move": "U",
+          "latency_s": 0.4856845000000476,
+          "attempt_latency_s": 0.4856336000000283,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.16,
+          "error": null
+        },
+        {
+          "turn": 12,
+          "move": "U",
+          "latency_s": 0.5104016999999885,
+          "attempt_latency_s": 0.5103535999999167,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.21,
+          "error": null
+        },
+        {
+          "turn": 13,
+          "move": "U",
+          "latency_s": 0.5075625000000628,
+          "attempt_latency_s": 0.5075177999999596,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.11,
+          "error": null
+        },
+        {
+          "turn": 14,
+          "move": "R'",
+          "latency_s": 0.49852769999995417,
+          "attempt_latency_s": 0.49848420000000715,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.08,
+          "error": null
+        },
+        {
+          "turn": 15,
+          "move": "R'",
+          "latency_s": 0.5207605000000513,
+          "attempt_latency_s": 0.5206971000000067,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.23,
+          "error": null
+        },
+        {
+          "turn": 16,
+          "move": "R'",
+          "latency_s": 0.5007590000000164,
+          "attempt_latency_s": 0.5006978000000117,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.17,
+          "error": null
+        },
+        {
+          "turn": 17,
+          "move": "U",
+          "latency_s": 0.5226531000000705,
+          "attempt_latency_s": 0.5225707999999258,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.11,
+          "error": null
+        },
+        {
+          "turn": 18,
+          "move": "U",
+          "latency_s": 0.49462019999998574,
+          "attempt_latency_s": 0.4945744999999988,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.12,
+          "error": null
+        },
+        {
+          "turn": 19,
+          "move": "U",
+          "latency_s": 0.5562506999999641,
+          "attempt_latency_s": 0.556183400000009,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.21,
+          "error": null
+        },
+        {
+          "turn": 20,
+          "move": "U",
+          "latency_s": 0.4960197999999991,
+          "attempt_latency_s": 0.4959698999999773,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.13,
+          "error": null
+        },
+        {
+          "turn": 21,
+          "move": "U",
+          "latency_s": 0.5031823999999006,
+          "attempt_latency_s": 0.5031188000000384,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.1,
+          "error": null
+        },
+        {
+          "turn": 22,
+          "move": null,
+          "latency_s": 1.476798400000007,
+          "attempt_latency_s": 0.486614500000087,
+          "attempts": 3,
+          "valid": false,
+          "confidence": null,
+          "error": "HTTP 502: {\"error\":{\"message\":\"OpenAI refused to answer question \\\"next_move\\\"\",\"code\":502}}"
+        },
+        {
+          "turn": 23,
+          "move": "U",
+          "latency_s": 0.48766310000007707,
+          "attempt_latency_s": 0.4876065999999355,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.09,
+          "error": null
+        },
+        {
+          "turn": 24,
+          "move": "U",
+          "latency_s": 0.5051792000000432,
+          "attempt_latency_s": 0.5051344999999401,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.14,
+          "error": null
+        },
+        {
+          "turn": 25,
+          "move": null,
+          "latency_s": 1.4694504999999936,
+          "attempt_latency_s": 0.48457699999994475,
+          "attempts": 3,
+          "valid": false,
+          "confidence": null,
+          "error": "HTTP 502: {\"error\":{\"message\":\"OpenAI refused to answer question \\\"next_move\\\"\",\"code\":502}}"
+        },
+        {
+          "turn": 26,
+          "move": null,
+          "latency_s": 1.544354799999951,
+          "attempt_latency_s": 0.4922282999999652,
+          "attempts": 3,
+          "valid": false,
+          "confidence": null,
+          "error": "HTTP 502: {\"error\":{\"message\":\"OpenAI refused to answer question \\\"next_move\\\"\",\"code\":502}}"
+        },
+        {
+          "turn": 27,
+          "move": "U",
+          "latency_s": 0.8451610999999275,
+          "attempt_latency_s": 0.8450914000000012,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.1,
+          "error": null
+        },
+        {
+          "turn": 28,
+          "move": "R'",
+          "latency_s": 0.5181029000000308,
+          "attempt_latency_s": 0.5180465000000822,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.08,
+          "error": null
+        },
+        {
+          "turn": 29,
+          "move": "R'",
+          "latency_s": 0.4986638000000312,
+          "attempt_latency_s": 0.49861329999998816,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.14,
+          "error": null
+        },
+        {
+          "turn": 30,
+          "move": "U",
+          "latency_s": 0.48545739999997295,
+          "attempt_latency_s": 0.48541180000006534,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.11,
+          "error": null
+        }
+      ],
+      "moves": 27,
+      "turns": 30,
+      "invalid": 0,
+      "retries": 6,
+      "transport_errors": 9,
+      "total_time_s": 20.214597700000013,
+      "optimal": 4,
+      "gap": null,
+      "cost": 0.0028340999999999996,
+      "current": "U",
+      "log": [
+        {
+          "turn": 22,
+          "attempt": 1,
+          "kind": "transport",
+          "error": "HTTP 502: {\"error\":{\"message\":\"OpenAI refused to answer question \\\"next_move\\\"\",\"code\":502}}"
+        },
+        {
+          "turn": 22,
+          "attempt": 2,
+          "kind": "transport",
+          "error": "HTTP 502: {\"error\":{\"message\":\"OpenAI refused to answer question \\\"next_move\\\"\",\"code\":502}}"
+        },
+        {
+          "turn": 22,
+          "attempt": 3,
+          "kind": "transport",
+          "error": "HTTP 502: {\"error\":{\"message\":\"OpenAI refused to answer question \\\"next_move\\\"\",\"code\":502}}"
+        },
+        {
+          "turn": 25,
+          "attempt": 1,
+          "kind": "transport",
+          "error": "HTTP 502: {\"error\":{\"message\":\"OpenAI refused to answer question \\\"next_move\\\"\",\"code\":502}}"
+        },
+        {
+          "turn": 25,
+          "attempt": 2,
+          "kind": "transport",
+          "error": "HTTP 502: {\"error\":{\"message\":\"OpenAI refused to answer question \\\"next_move\\\"\",\"code\":502}}"
+        },
+        {
+          "turn": 25,
+          "attempt": 3,
+          "kind": "transport",
+          "error": "HTTP 502: {\"error\":{\"message\":\"OpenAI refused to answer question \\\"next_move\\\"\",\"code\":502}}"
+        },
+        {
+          "turn": 26,
+          "attempt": 1,
+          "kind": "transport",
+          "error": "HTTP 502: {\"error\":{\"message\":\"OpenAI refused to answer question \\\"next_move\\\"\",\"code\":502}}"
+        },
+        {
+          "turn": 26,
+          "attempt": 2,
+          "kind": "transport",
+          "error": "HTTP 502: {\"error\":{\"message\":\"OpenAI refused to answer question \\\"next_move\\\"\",\"code\":502}}"
+        },
+        {
+          "turn": 26,
+          "attempt": 3,
+          "kind": "transport",
+          "error": "HTTP 502: {\"error\":{\"message\":\"OpenAI refused to answer question \\\"next_move\\\"\",\"code\":502}}"
+        }
+      ]
+    },
+    {
+      "model": "clef",
+      "label": "Cloudflare Clef",
+      "puzzle_id": 1,
+      "state": "UUFDUDFRULFLBRLDLFRFBFFRFULUBBDDFBUUBBDRLURLRDRRBBDLLD",
+      "status": "limit",
+      "history": [
+        {
+          "turn": 1,
+          "move": "R",
+          "latency_s": 1.359317899999951,
+          "attempt_latency_s": 1.3592371999999386,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.0295,
+          "error": null
+        },
+        {
+          "turn": 2,
+          "move": "R'",
+          "latency_s": 0.7328764000000092,
+          "attempt_latency_s": 0.732831899999951,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.182,
+          "error": null
+        },
+        {
+          "turn": 3,
+          "move": "F",
+          "latency_s": 0.7009838999999829,
+          "attempt_latency_s": 0.7009406999999328,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.0591,
+          "error": null
+        },
+        {
+          "turn": 4,
+          "move": "F'",
+          "latency_s": 0.7066847999999482,
+          "attempt_latency_s": 0.7066343000000188,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.2271,
+          "error": null
+        },
+        {
+          "turn": 5,
+          "move": "U",
+          "latency_s": 0.7152922999999873,
+          "attempt_latency_s": 0.7152512999999772,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.0567,
+          "error": null
+        },
+        {
+          "turn": 6,
+          "move": "F'",
+          "latency_s": 0.740105500000027,
+          "attempt_latency_s": 0.7400594999999157,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.1197,
+          "error": null
+        },
+        {
+          "turn": 7,
+          "move": "F",
+          "latency_s": 0.751501400000052,
+          "attempt_latency_s": 0.7514225999999553,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.1235,
+          "error": null
+        },
+        {
+          "turn": 8,
+          "move": "F'",
+          "latency_s": 0.7439752999999882,
+          "attempt_latency_s": 0.7438941000000341,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.0548,
+          "error": null
+        },
+        {
+          "turn": 9,
+          "move": "F'",
+          "latency_s": 0.6578710000000001,
+          "attempt_latency_s": 0.657787399999961,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.0862,
+          "error": null
+        },
+        {
+          "turn": 10,
+          "move": "U'",
+          "latency_s": 0.6769650999999612,
+          "attempt_latency_s": 0.6769171000000824,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.0684,
+          "error": null
+        },
+        {
+          "turn": 11,
+          "move": "U'",
+          "latency_s": 0.6451471000000311,
+          "attempt_latency_s": 0.6451027000000522,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.0812,
+          "error": null
+        },
+        {
+          "turn": 12,
+          "move": "F'",
+          "latency_s": 0.6829778999999689,
+          "attempt_latency_s": 0.6829302999999527,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.0413,
+          "error": null
+        },
+        {
+          "turn": 13,
+          "move": "F",
+          "latency_s": 0.665706699999987,
+          "attempt_latency_s": 0.665664799999945,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.1076,
+          "error": null
+        },
+        {
+          "turn": 14,
+          "move": "U",
+          "latency_s": 0.6479794000000538,
+          "attempt_latency_s": 0.6479309000000057,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.0693,
+          "error": null
+        },
+        {
+          "turn": 15,
+          "move": "U",
+          "latency_s": 0.7144853999999441,
+          "attempt_latency_s": 0.7144354000000703,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.0748,
+          "error": null
+        },
+        {
+          "turn": 16,
+          "move": "R",
+          "latency_s": 0.6306680999999799,
+          "attempt_latency_s": 0.6306266000000278,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.0442,
+          "error": null
+        },
+        {
+          "turn": 17,
+          "move": "R'",
+          "latency_s": 0.673313300000018,
+          "attempt_latency_s": 0.6732630000000199,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.1775,
+          "error": null
+        },
+        {
+          "turn": 18,
+          "move": "U'",
+          "latency_s": 0.6644403000000239,
+          "attempt_latency_s": 0.6643913999999995,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.0654,
+          "error": null
+        },
+        {
+          "turn": 19,
+          "move": "U'",
+          "latency_s": 0.7304795000000013,
+          "attempt_latency_s": 0.7304084000001012,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.1127,
+          "error": null
+        },
+        {
+          "turn": 20,
+          "move": "U'",
+          "latency_s": 0.6615606999999954,
+          "attempt_latency_s": 0.6615143999999873,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.0408,
+          "error": null
+        },
+        {
+          "turn": 21,
+          "move": "U",
+          "latency_s": 0.7120367999999644,
+          "attempt_latency_s": 0.711958500000037,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.0951,
+          "error": null
+        },
+        {
+          "turn": 22,
+          "move": "R",
+          "latency_s": 0.6659803000000011,
+          "attempt_latency_s": 0.6659048999999868,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.0488,
+          "error": null
+        },
+        {
+          "turn": 23,
+          "move": "R'",
+          "latency_s": 0.6502485999999408,
+          "attempt_latency_s": 0.6501680999999735,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.1021,
+          "error": null
+        },
+        {
+          "turn": 24,
+          "move": "U",
+          "latency_s": 0.6770662999999786,
+          "attempt_latency_s": 0.6769945999999436,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.0572,
+          "error": null
+        },
+        {
+          "turn": 25,
+          "move": "U'",
+          "latency_s": 0.634673399999997,
+          "attempt_latency_s": 0.6346328999999287,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.0997,
+          "error": null
+        },
+        {
+          "turn": 26,
+          "move": "F",
+          "latency_s": 0.6534651999999141,
+          "attempt_latency_s": 0.6534235999999964,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.034,
+          "error": null
+        },
+        {
+          "turn": 27,
+          "move": "F'",
+          "latency_s": 0.6407806999999366,
+          "attempt_latency_s": 0.6406873000000814,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.3777,
+          "error": null
+        },
+        {
+          "turn": 28,
+          "move": "F'",
+          "latency_s": 0.6496323999999731,
+          "attempt_latency_s": 0.649584300000015,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.0377,
+          "error": null
+        },
+        {
+          "turn": 29,
+          "move": "F",
+          "latency_s": 0.9166788999999653,
+          "attempt_latency_s": 0.9166050999999698,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.0208,
+          "error": null
+        },
+        {
+          "turn": 30,
+          "move": "F'",
+          "latency_s": 0.6457035999999334,
+          "attempt_latency_s": 0.645653799999991,
+          "attempts": 1,
+          "valid": true,
+          "confidence": 0.239,
+          "error": null
+        }
+      ],
+      "moves": 30,
+      "turns": 30,
+      "invalid": 0,
+      "retries": 0,
+      "transport_errors": 0,
+      "total_time_s": 21.349440699999946,
+      "optimal": 4,
+      "gap": null,
+      "cost": 0.0020152799999999995,
+      "current": "F'",
+      "log": []
+    },
+    {
+      "model": "opus",
+      "label": "Claude Opus 5.5",
+      "puzzle_id": 1,
+      "state": "RDBRULLBULDRLRRRFDFUBDFBRFFFRDUDUUFLUUDRLBLLUDFBBBDBLF",
+      "status": "running",
+      "history": [
+        {
+          "turn": 1,
+          "move": "D",
+          "latency_s": 15.061937199999988,
+          "attempt_latency_s": 15.061750899999993,
+          "attempts": 1,
+          "valid": true,
+          "confidence": null,
+          "error": null
+        },
+        {
+          "turn": 2,
+          "move": "R",
+          "latency_s": 7.392664600000103,
+          "attempt_latency_s": 7.392487800000026,
+          "attempts": 1,
+          "valid": true,
+          "confidence": null,
+          "error": null
+        },
+        {
+          "turn": 3,
+          "move": "U",
+          "latency_s": 5.643514900000014,
+          "attempt_latency_s": 5.643385899999998,
+          "attempts": 1,
+          "valid": true,
+          "confidence": null,
+          "error": null
+        },
+        {
+          "turn": 4,
+          "move": "F",
+          "latency_s": 6.743197800000075,
+          "attempt_latency_s": 6.743009299999926,
+          "attempts": 1,
+          "valid": true,
+          "confidence": null,
+          "error": null
+        },
+        {
+          "turn": 5,
+          "move": "R'",
+          "latency_s": 7.062760799999978,
+          "attempt_latency_s": 7.062571399999911,
+          "attempts": 1,
+          "valid": true,
+          "confidence": null,
+          "error": null
+        },
+        {
+          "turn": 6,
+          "move": "F2",
+          "latency_s": 7.343984500000033,
+          "attempt_latency_s": 7.343851200000017,
+          "attempts": 1,
+          "valid": true,
+          "confidence": null,
+          "error": null
+        },
+        {
+          "turn": 7,
+          "move": "U",
+          "latency_s": 6.568387799999982,
+          "attempt_latency_s": 6.568253199999958,
+          "attempts": 1,
+          "valid": true,
+          "confidence": null,
+          "error": null
+        },
+        {
+          "turn": 8,
+          "move": "R",
+          "latency_s": 6.604087100000015,
+          "attempt_latency_s": 6.603973499999938,
+          "attempts": 1,
+          "valid": true,
+          "confidence": null,
+          "error": null
+        },
+        {
+          "turn": 9,
+          "move": "U'",
+          "latency_s": 10.718648799999983,
+          "attempt_latency_s": 10.718489699999964,
+          "attempts": 1,
+          "valid": true,
+          "confidence": null,
+          "error": null
+        },
+        {
+          "turn": 10,
+          "move": "R",
+          "latency_s": 6.64884799999993,
+          "attempt_latency_s": 6.648679399999992,
+          "attempts": 1,
+          "valid": true,
+          "confidence": null,
+          "error": null
+        },
+        {
+          "turn": 11,
+          "move": "U",
+          "latency_s": 6.961389999999938,
+          "attempt_latency_s": 6.961214599999948,
+          "attempts": 1,
+          "valid": true,
+          "confidence": null,
+          "error": null
+        },
+        {
+          "turn": 12,
+          "move": "R'",
+          "latency_s": 8.923325500000146,
+          "attempt_latency_s": 8.923075300000164,
+          "attempts": 1,
+          "valid": true,
+          "confidence": null,
+          "error": null
+        },
+        {
+          "turn": 13,
+          "move": "U'",
+          "latency_s": 5.394044399999984,
+          "attempt_latency_s": 5.393861400000105,
+          "attempts": 1,
+          "valid": true,
+          "confidence": null,
+          "error": null
+        },
+        {
+          "turn": 14,
+          "move": "R",
+          "latency_s": 8.664161100000001,
+          "attempt_latency_s": 8.663994000000002,
+          "attempts": 1,
+          "valid": true,
+          "confidence": null,
+          "error": null
+        },
+        {
+          "turn": 15,
+          "move": "U",
+          "latency_s": 6.752198899999939,
+          "attempt_latency_s": 6.751978999999892,
+          "attempts": 1,
+          "valid": true,
+          "confidence": null,
+          "error": null
+        },
+        {
+          "turn": 16,
+          "move": "R'",
+          "latency_s": 8.50936159999992,
+          "attempt_latency_s": 8.509192200000143,
+          "attempts": 1,
+          "valid": true,
+          "confidence": null,
+          "error": null
+        },
+        {
+          "turn": 17,
+          "move": "U'",
+          "latency_s": 6.100549999999885,
+          "attempt_latency_s": 6.100377299999991,
+          "attempts": 1,
+          "valid": true,
+          "confidence": null,
+          "error": null
+        },
+        {
+          "turn": 18,
+          "move": "R",
+          "latency_s": 7.076983599999949,
+          "attempt_latency_s": 7.0768450000000485,
+          "attempts": 1,
+          "valid": true,
+          "confidence": null,
+          "error": null
+        },
+        {
+          "turn": 19,
+          "move": "U",
+          "latency_s": 6.519701599999962,
+          "attempt_latency_s": 6.519560699999829,
+          "attempts": 1,
+          "valid": true,
+          "confidence": null,
+          "error": null
+        },
+        {
+          "turn": 20,
+          "move": "R'",
+          "latency_s": 7.4524523000000045,
+          "attempt_latency_s": 7.452210299999933,
+          "attempts": 1,
+          "valid": true,
+          "confidence": null,
+          "error": null
+        },
+        {
+          "turn": 21,
+          "move": "U'",
+          "latency_s": 8.25654869999994,
+          "attempt_latency_s": 8.256276600000092,
+          "attempts": 1,
+          "valid": true,
+          "confidence": null,
+          "error": null
+        },
+        {
+          "turn": 22,
+          "move": "R",
+          "latency_s": 6.2921671000001425,
+          "attempt_latency_s": 6.292015900000024,
+          "attempts": 1,
+          "valid": true,
+          "confidence": null,
+          "error": null
+        },
+        {
+          "turn": 23,
+          "move": "U",
+          "latency_s": 5.830656999999974,
+          "attempt_latency_s": 5.830514399999856,
+          "attempts": 1,
+          "valid": true,
+          "confidence": null,
+          "error": null
+        }
+      ],
+      "moves": 23,
+      "turns": 23,
+      "invalid": 0,
+      "retries": 0,
+      "transport_errors": 0,
+      "total_time_s": 172.522375,
+      "optimal": 4,
+      "gap": null,
+      "cost": 0.288404,
+      "current": "U",
+      "log": []
+    }
+  ],
+  "labels": {
+    "jev": "Jev 1.13",
+    "luna": "GPT-6 Luna Decisions",
+    "clef": "Cloudflare Clef",
+    "opus": "Claude Opus 5.5"
+  },
+  "summary": {
+    "jev": {
+      "label": "Jev 1.13",
+      "trials": 1,
+      "solved": 0,
+      "success_rate": 0.0,
+      "avg_latency_s": 0.6258209199999972,
+      "median_latency_s": 0.6008954999999787,
+      "p95_latency_s": 0.7507049999999253,
+      "avg_total_time_s": 18.775462800000014,
+      "avg_moves": 30.0,
+      "avg_moves_solved": null,
+      "avg_gap": null,
+      "optimal_hits": 0,
+      "gap_samples": 0,
+      "invalid_outputs": 0,
+      "retries": 0,
+      "transport_errors": 0,
+      "total_cost": 0.0020588820000000006
+    },
+    "luna": {
+      "label": "GPT-6 Luna Decisions",
+      "trials": 1,
+      "solved": 0,
+      "success_rate": 0.0,
+      "avg_latency_s": 0.6737901933333394,
+      "median_latency_s": 0.5104016999999885,
+      "p95_latency_s": 1.544354799999951,
+      "avg_total_time_s": 20.214597700000013,
+      "avg_moves": 27.0,
+      "avg_moves_solved": null,
+      "avg_gap": null,
+      "optimal_hits": 0,
+      "gap_samples": 0,
+      "invalid_outputs": 0,
+      "retries": 6,
+      "transport_errors": 9,
+      "total_cost": 0.0028340999999999996
+    },
+    "clef": {
+      "label": "Cloudflare Clef",
+      "trials": 1,
+      "solved": 0,
+      "success_rate": 0.0,
+      "avg_latency_s": 0.7116199399999839,
+      "median_latency_s": 0.673313300000018,
+      "p95_latency_s": 0.9166788999999653,
+      "avg_total_time_s": 21.349440699999946,
+      "avg_moves": 30.0,
+      "avg_moves_solved": null,
+      "avg_gap": null,
+      "optimal_hits": 0,
+      "gap_samples": 0,
+      "invalid_outputs": 0,
+      "retries": 0,
+      "transport_errors": 0,
+      "total_cost": 0.0020152799999999995
+    }
+  },
+  "started_at": 1792692629.5392644,
+  "finished_at": 1792692803.8956182
+}
